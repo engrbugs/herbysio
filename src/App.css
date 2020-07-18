@@ -1,3 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+
+}
+
+.App {
+  text-align: center;
+}
+
+
+
+/* Welcome Header START*/
+
+
+
+.welcome-section {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.profile-pic {
+  display: inline;
+  margin: 0 auto;
+  margin-left: -5%;
+  height: 110%;
+  width: auto;
+
+  filter: gray; /* IE6-9 */
+-webkit-filter: grayscale(1);  /*  Google Chrome, Safari 6+ & Opera 15+ */
+ filter: grayscale(1);  /* Microsoft Edge and Firefox 35+ */
+}
+
+.image-cropper {
+  width: 168px;
+  height: 168px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 3px solid black;
+}
+
+
+
+
+
+/* Welcome Header END*/
+
+
 .App {
   text-align: center;
 }
@@ -13,16 +71,7 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+
 
 .App-link {
   color: #61dafb;
