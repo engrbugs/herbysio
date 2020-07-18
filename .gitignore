@@ -23,6 +23,3 @@ yarn-debug.log*
 yarn-error.log*
 
 HERBYSIO.code-workspace
-.gitignore
-
-hello
