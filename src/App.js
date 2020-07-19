@@ -15,26 +15,17 @@ function App() {
           <div className="image-cropper">
             <img className="profile-pic" src={profilePicture} alt="" />
           </div>
-          
-          <div className="profile-content container-fluid m-5">
-            <div className="row ml-5">
-            <h5>
-              Hello, my name is HERBY SIO.
-            </h5>
+
+          <div className="container-fluid m-5">
+            <div className="profile-name row text-align-center justify-content-center">
+              <h5><bigger>Hello</bigger>, my name is <bigger>Herby Sio.</bigger></h5>
             </div>
-            <div className="row text-align-center justify-content-center">
-            <h5>
-              I am an Engineer.
-            </h5>
+            <div className="profile-engineer row text-align-center justify-content-center">
+              <h5>I am an <bigger>Engineer.</bigger></h5>
             </div>
             <div className="row float-right">
-<h5>
-              Machine Learning,
-              AI, and Mathematics enthusiast.
-            </h5>
+              <h5>Machine Learning, AI, and Mathematics enthusiast.</h5>
             </div>
-            
-            
           </div>
 
           <div className=" float-left">
