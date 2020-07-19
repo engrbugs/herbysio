@@ -2,53 +2,63 @@ import React, { useState, useEffect, useCallback } from "react";
 import logo from "./logo.svg";
 import profilePicture from "./assets/images/profile.jpg";
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header welcome-section">
-        <div className="container clearfix">
+    <div className="App grid">
+      <header className="container-fluid welcome-section">
+        {/* diagonal section  */}
+        <div className="section row"></div>
+        {/* diagonal section  */}
+        <div className="row text-align-center justify-content-center">
           <div className="image-cropper">
-            <img
-              className="profile-pic"
-              src={profilePicture}
-              alt=""
-            />
+            <img className="profile-pic" src={profilePicture} alt="" />
+          </div>
+          
+          <div className="profile-content container-fluid m-5">
+            <div className="row ml-5">
+            <h5>
+              Hello, my name is HERBY SIO.
+            </h5>
+            </div>
+            <div className="row text-align-center justify-content-center">
+            <h5>
+              I am an Engineer.
+            </h5>
+            </div>
+            <div className="row float-right">
+<h5>
+              Machine Learning,
+              AI, and Mathematics enthusiast.
+            </h5>
+            </div>
+            
+            
           </div>
 
-          <div className="profile-content float-left">
-            <h1 className="name">James Lee</h1>
-            <h2 className="desc">Web App Developer</h2>
+          <div className=" float-left">
             <ul className="social list-inline">
               <li className="list-inline-item">
-                <a href="#">
-                  <i className="fab fa-twitter"></i>
-                </a>
+                <i className="fab fa-twitter"></i>
               </li>
               <li className="list-inline-item">
-                <a href="#">
-                  <i className="fab fa-linkedin-in"></i>
-                </a>
+                <i className="fab fa-linkedin-in"></i>
               </li>
               <li className="list-inline-item">
-                <a href="#">
-                  <i className="fab fa-github-alt"></i>
-                </a>
+                <i className="fab fa-github-alt"></i>
               </li>
               <li className="list-inline-item">
-                <a href="#">
-                  <i className="fab fa-stack-overflow"></i>
-                </a>
+                <i className="fab fa-stack-overflow"></i>
               </li>
               <li className="list-inline-item last-item">
-                <a href="#">
-                  <i className="fab fa-codepen"></i>
-                </a>
+                <i className="fab fa-codepen"></i>
               </li>
             </ul>
           </div>
         </div>
-
+      </header>
+      <div>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -60,7 +70,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </div>
     </div>
   );
 }

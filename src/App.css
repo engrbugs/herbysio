@@ -1,87 +1,80 @@
+@font-face {
+  font-family: 'Dubai';
+  src: url('./assets/fonts/Dubai-Light.woff2') format('woff2'),
+      url('./assets/fonts/Dubai-Light.woff') format('woff'),
+      url('./assets/fonts/DUBAI-LIGHT.TTF') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap');
+
 * {
   box-sizing: border-box;
 }
 
-
 body {
-
+  
 }
 
 .App {
+  background-color: #f1faee;
   text-align: center;
 }
-
-
 
 /* Welcome Header START*/
 
-
-
-.welcome-section {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+html h5 {
+  
+  font-size: 2.8rem;
+  font-weight: 300;
 }
 
-.profile-pic {
-  display: inline;
-  margin: 0 auto;
-  margin-left: -5%;
-  height: 110%;
-  width: auto;
+.welcome-section {
+  background-color: #2e86de;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  height: 100vh;
+  font-family: 'Raleway', sans-serif;
+  /* font-family: 'Dubai'; */
+  font-weight: 300;
+  /* font-style: normal; */
 
-  filter: gray; /* IE6-9 */
--webkit-filter: grayscale(1);  /*  Google Chrome, Safari 6+ & Opera 15+ */
- filter: grayscale(1);  /* Microsoft Edge and Firefox 35+ */
+}
+
+/* DIAGONAL SECTION */
+
+.section {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  height: 32%;
+  background-image: linear-gradient(#222f3e , #404756);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));
+  /* change the calc height to a percentage height to get alternate responsive behavior*/
 }
 
 .image-cropper {
+  margin-top: -111px;
   width: 168px;
   height: 168px;
-  position: relative;
   overflow: hidden;
   border-radius: 50%;
-  border: 3px solid black;
+  /* border: 3px solid black; */
+  z-index: 10;
+ box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
+.profile-pic {
 
-
-
+  margin-left: -5%;
+  height: 110%;
+  width: auto;
+  
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /*  Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+}
 
 /* Welcome Header END*/
 
-
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
