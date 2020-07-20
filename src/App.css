@@ -99,3 +99,37 @@ html .profile-engineer h5{
 
 /* Welcome Header END*/
 
+
+/* mail */
+.mail {
+  display: flex;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+	flex-direction: row-reverse;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+  align-content: stretch;
+  z-index: 1030;
+}
+
+	/* top green #5CA4A9 */
+	.st0{fill: #457b9d;}
+/* paper #E6EBE0*/
+	.st1{fill:#f1faee;}
+/* pen */
+	.st2{fill:#CBCCCA;}
+/* left red #ED6A5A*/
+	.st3{fill:#ED6A5A;}
+/* right yellow  #F4F1BB*/
+	.st4{fill:#a8dadc;}
+
+#mail-icon {
+	width:120px;
+	cursor: pointer;
+}
+
+
+
+
