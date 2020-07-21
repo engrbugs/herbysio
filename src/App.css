@@ -1,20 +1,19 @@
 @font-face {
-  font-family: 'Dubai';
-  src: url('./assets/fonts/Dubai-Light.woff2') format('woff2'),
-      url('./assets/fonts/Dubai-Light.woff') format('woff'),
-      url('./assets/fonts/DUBAI-LIGHT.TTF') format('truetype');
+  font-family: "Dubai";
+  src: url("./assets/fonts/Dubai-Light.woff2") format("woff2"),
+    url("./assets/fonts/Dubai-Light.woff") format("woff"),
+    url("./assets/fonts/DUBAI-LIGHT.TTF") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  
 }
 
 .App {
@@ -26,20 +25,20 @@ body {
 
 html h5 {
   line-height: 1.5;
-  font-size: 2.0rem;
+  font-size: 2rem;
   font-weight: 300;
 }
 
-html h5 bigger{
-  font-size: 3.0rem;
+html h5 strong {
+  font-size: 3rem;
   font-weight: 300;
 }
 
-html .profile-name h5{
+html .profile-name h5 {
   margin-left: -18.8rem;
 }
 
-html .profile-engineer h5{
+html .profile-engineer h5 {
   margin-left: -6.8rem;
 }
 
@@ -48,11 +47,10 @@ html .profile-engineer h5{
   font-size: calc(10px + 2vmin);
   color: white;
   height: 100vh;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   /* font-family: 'Dubai'; */
   font-weight: 300;
   /* font-style: normal; */
-
 }
 
 /* DIAGONAL SECTION */
@@ -62,7 +60,7 @@ html .profile-engineer h5{
   border: 0;
   padding: 0;
   height: 32%;
-  background-image: linear-gradient(#222f3e , #404756);
+  background-image: linear-gradient(#222f3e, #404756);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));
   /* change the calc height to a percentage height to get alternate responsive behavior*/
 }
@@ -75,21 +73,21 @@ html .profile-engineer h5{
   border-radius: 50%;
   /* border: 3px solid black; */
   z-index: 10;
- /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); */
- box-shadow: 2px 0 48px -3px rgba(0,0,0,.4);
- user-select: none;}
+  /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); */
+  box-shadow: 2px 0 48px -3px rgba(0, 0, 0, 0.4);
+  user-select: none;
+}
 
 .profile-pic {
-
   margin-left: -5%;
   height: 110%;
   width: auto;
-  
+
   filter: gray; /* IE6-9 */
   -webkit-filter: grayscale(1); /*  Google Chrome, Safari 6+ & Opera 15+ */
   filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
   /* None drag */
-  user-drag: none; 
+  user-drag: none;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-drag: none;
@@ -98,38 +96,3 @@ html .profile-engineer h5{
 }
 
 /* Welcome Header END*/
-
-
-/* mail */
-.mail {
-  display: flex;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-	flex-direction: row-reverse;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: stretch;
-  align-content: stretch;
-  z-index: 1030;
-}
-
-	/* top green #5CA4A9 */
-	.st0{fill: #457b9d;}
-/* paper #E6EBE0*/
-	.st1{fill:#f1faee;}
-/* pen */
-	.st2{fill:#CBCCCA;}
-/* left red #ED6A5A*/
-	.st3{fill:#ED6A5A;}
-/* right yellow  #F4F1BB*/
-	.st4{fill:#a8dadc;}
-
-#mail-icon {
-	width:120px;
-	cursor: pointer;
-}
-
-
-
-
