@@ -39,7 +39,7 @@ html .profile-name h5 {
 }
 
 html .profile-engineer h5 {
-  margin-left: -6.8rem;
+  margin-left: -2.8rem;
 }
 
 .welcome-section {
@@ -64,6 +64,8 @@ html .profile-engineer h5 {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));
   /* change the calc height to a percentage height to get alternate responsive behavior*/
 }
+
+/* DIAGONAL SECTION */
 
 .image-cropper {
   margin-top: -111px;
@@ -96,3 +98,24 @@ html .profile-engineer h5 {
 }
 
 /* Welcome Header END*/
+/* Coming Soon START*/
+
+
+html .coming-soon-section {
+  background-color: white;
+  background-image: url(./assets/images/hello-i-m-nik-MAgPyHRO0AA-unsplash.jpg) no-repeat fixed;
+  background-size: cover;
+  place-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  height: 100vh;
+  font-family: "Raleway", sans-serif;
+  /* font-family: 'Dubai'; */
+  font-weight: 300;
+  /* font-style: normal; */
+  height: 100%;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
