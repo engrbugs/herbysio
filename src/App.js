@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import React, { useState, useEffect, useCallback } from "react";
 import profilePicture from "./assets/images/profile.jpg";
 import "./App.css";
@@ -10,7 +11,7 @@ function App() {
   return (
     <div className="App grid">
       <header className="container-fluid welcome-section">
-        <div className="mail">
+        <div className="mail" title="email me">
           <EmailMe />
         </div>
         {/* diagonal section  */}
@@ -34,25 +35,32 @@ function App() {
             <div className="row float-right">
               <h5>Machine Learning, AI, and Mathematics enthusiast.</h5>
             </div>
+            <div className="arrow">
+              <a
+                href="#coming-soon-section"
+                className="scroll-down-link scroll-down-arrow"
+                aria-label="scroll-down"
+              ></a>
+            </div>
           </div>
         </div>
       </header>
-      <section id="coming-soon-section vh-100">
-      <div>
-        <h1>
-          Edit <code>src/App.js</code> and sasddve to reload.
-        </h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </div>
+      <section id="coming-soon-section" className="coming-soon-section">
+        <div>
+          <h1>
+            Edit <code>src/App.js</code> and sasddve to reload.
+          </h1>
+          <a
+            className="App-link"
+            href="https://reactjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Learn React
+          </a>
+        </div>
       </section>
-      
+      <footer>Let's connect</footer>
     </div>
   );
 }
