@@ -50,7 +50,7 @@ html .profile-engineer h5 {
 .welcome-section {
   background-color: #2e86de;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #fff;
   height: 100vh;
   font-family: "Raleway", sans-serif;
   /* font-family: 'Dubai'; */
@@ -195,54 +195,9 @@ html .coming-soon-section {
 
 footer {
   background-color: #222f3e;
-  color: #ff9ff3;
-  text-align: center;
-  /* padding: 10px; */
   height: 10vh;
-  /* font-family: 'Nunito', sans-serif; */
-  /* height: 88px; */
   font-size: 20px;
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-
-
-
-
-
-.social-link--linkedin {
-  color: #2d76b0;
-}
-.social-link .social-svg {
-  width: 2.4rem;
-  height: 2.4rem;
-  cursor: pointer;
-}
-.social-link .social-svg .social-group__icon {
-  fill: #fff;
-  transition: all 0.2s;
-}
-.social-link .social-svg .social-group__inner-circle {
-  fill: transparent;
-  transition: all 0.2s;
-}
-.social-link .social-svg .social-group__outline {
-  stroke: #fff;
-  transform-origin: 50% 50%;
-  transition: all 0.2s;
-}
-.social-link .social-svg:hover .social-group__icon, .social-link .social-svg:active .social-group__icon, .social-link .social-svg:focus .social-group__icon {
-  fill: #fffbfa;
-  transition: all 0.45s;
-}
-.social-link .social-svg:hover .social-group__inner-circle, .social-link .social-svg:active .social-group__inner-circle, .social-link .social-svg:focus .social-group__inner-circle {
-  fill: #2d76b0;
-  transition: all 0.45s;
-}
-.social-link .social-svg:hover .social-group__outline, .social-link .social-svg:active .social-group__outline, .social-link .social-svg:focus .social-group__outline {
-  stroke: #2d76b0;
-  transform: scale(1.1);
-  transition: all 0.45s;
 }
