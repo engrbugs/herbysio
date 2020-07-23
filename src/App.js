@@ -1,24 +1,23 @@
-/* eslint-disable jsx-a11y/anchor-has-content */
 import React, { useState, useEffect, useCallback } from "react";
 import profilePicture from "./assets/images/profile.jpg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import EmailMe from "./components/email-icon.js";
 import FooterIcon from "./components/footer-icon";
+import ScrollDownArrow from "./components/scroll-down-arrow.js"
+import DiagonalSection from "./components/diagonal-section.js"
 
 export const WEBSITE_EMAIL = "engrherbysio@gmail.com";
 
 function App() {
   return (
     <div className="App grid">
-      <header className="container-fluid welcome-section">
+      <header className="container-fluid welcome-section p-0 m-0">
         <div className="mail" title="email me">
           <EmailMe />
         </div>
-        {/* diagonal section  */}
-        <div className="section row"></div>
-        {/* diagonal section  */}
-        <div className="row text-align-center justify-content-center">
+        <DiagonalSection />
+        <div className="row text-align-center justify-content-center m-0">
           <div className="image-cropper">
             <img className="profile-pic" src={profilePicture} alt="" />
           </div>
@@ -37,16 +36,12 @@ function App() {
               <h5>Machine Learning, AI, and Mathematics enthusiast.</h5>
             </div>
             <div className="arrow">
-              <a
-                href="#coming-soon-section"
-                className="scroll-down-link scroll-down-arrow"
-                aria-label="scroll-down"
-              ></a>
+              <ScrollDownArrow />
             </div>
           </div>
         </div>
       </header>
-      <section id="coming-soon-section" className="coming-soon-section">
+      <section id="coming-soon" className="coming-soon-section">
         <div>
           <h1>
             Edit <code>src/App.js</code> and sasddve to reload.

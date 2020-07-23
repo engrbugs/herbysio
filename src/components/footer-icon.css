@@ -1,0 +1,41 @@
+.social-link--linkedin {
+    color: #2d76b0;
+  }
+  .social-link .social-svg {
+    width: 7vh;
+    height: 7vh;
+    cursor: pointer;
+  }
+  .social-link .social-svg .social-group__icon {
+    fill: #fff;
+    transition: all 0.2s;
+  }
+  .social-link .social-svg .social-group__inner-circle {
+    fill: transparent;
+    transition: all 0.2s;
+  }
+  .social-link .social-svg .social-group__outline {
+    stroke: #fff;
+    transform-origin: 50% 50%;
+    transition: all 0.2s;
+  }
+  .social-link .social-svg:hover .social-group__icon,
+  .social-link .social-svg:active .social-group__icon,
+  .social-link .social-svg:focus .social-group__icon {
+    fill: #fffbfa;
+    transition: all 0.45s;
+  }
+  .social-link .social-svg:hover .social-group__inner-circle,
+  .social-link .social-svg:active .social-group__inner-circle,
+  .social-link .social-svg:focus .social-group__inner-circle {
+    fill: #2d76b0;
+    transition: all 0.45s;
+  }
+  .social-link .social-svg:hover .social-group__outline,
+  .social-link .social-svg:active .social-group__outline,
+  .social-link .social-svg:focus .social-group__outline {
+    stroke: #2d76b0;
+    transform: scale(1.1);
+    transition: all 0.45s;
+  }
+  
