@@ -7,7 +7,7 @@
   font-style: normal;
   font-display: swap;
 } */
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;800;900&display=swap");
 
 * {
   box-sizing: border-box;
@@ -57,6 +57,7 @@ html .profile-engineer h5 {
   font-weight: 300;
   /* font-style: normal; */
 }
+
 .mail {
   display: flex;
   position: absolute;
@@ -69,6 +70,7 @@ html .profile-engineer h5 {
   align-content: stretch;
   z-index: 1030;
 }
+
 .image-cropper {
   margin-top: -111px;
   width: 168px;
@@ -101,10 +103,22 @@ html .profile-engineer h5 {
 
 /* Coming Soon START*/
 
+
+
 html .coming-soon-section {
   background-color: white;
-  background-image: url(./assets/images/hello-i-m-nik-MAgPyHRO0AA-unsplash.jpg);
-
+  /* background-image: url(./assets/images/hello-i-m-nik-MAgPyHRO0AA-unsplash.jpg); */
+  background-image: url(./assets/images/hello-i-m-nik-MAgPyHRO0AA-small.jpg);
+  background-image: 
+    -webkit-image-set(
+      "./assets/images/hello-i-m-nik-MAgPyHRO0AA-small.jpg" 1x,
+      "./assets/images/hello-i-m-nik-MAgPyHRO0AA-medium.jpg" 2x,
+    );
+  background-image: 
+    image-set(
+      "./assets/images/hello-i-m-nik-MAgPyHRO0AA-small.jpg" 1x,
+      "./assets/images/hello-i-m-nik-MAgPyHRO0AA-medium.jpg" 2x,
+    );
   font-size: calc(10px + 2vmin);
   color: #000;
   height: 90vh;
@@ -115,11 +129,54 @@ html .coming-soon-section {
 
   background-size: 118%;
   background-repeat: no-repeat;
-  background-position: top 58% left 95%;
+  background-position: top 38% left 100%;
+}
+@media
+  (min-width: 800px) {
+    html .coming-soon-section {
+    background-image: url(./assets/images/hello-i-m-nik-MAgPyHRO0AA-large.jpg);
+    background-image: 
+      -webkit-image-set(
+        "./assets/images/hello-i-m-nik-MAgPyHRO0AA-large.jpg" 1x,
+        "./assets/images/hello-i-m-nik-MAgPyHRO0AA-extralarge.jpg" 2x,
+      );
+    background-image: 
+      image-set(
+        "./assets/images/hello-i-m-nik-MAgPyHRO0AA-large.jpg" 1x,
+        "./assets/images/hello-i-m-nik-MAgPyHRO0AA-extralarge.jpg" 2x,
+      );
+
+      background-size: 118%;
+      background-repeat: no-repeat;
+      background-position: top 48% left 95%;
+  }
+}
+
+.coming-soon-section .underconstruction {
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: .2px;
+}
+
+.coming-soon-section .pound{
+  color: #54a0ff;
+  font-weight: 900;
+  font-size: 11px;
+  letter-spacing: 1px;
+
+}
+
+.coming-soon-section .checkout{
+  color: #576574;
+  font-weight: 500;
+  font-size: 16px;
+  /* letter-spacing: 1px; */
+
 }
 
 .coming-soon-section h1 {
-  font-weight: 900;
+  font-weight: 800;
+  letter-spacing: .5px;
 }
 
 footer {
