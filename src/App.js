@@ -42,18 +42,17 @@ function App() {
         </div>
       </header>
       <section id="coming-soon" className="coming-soon-section">
-        <div>
-          <h1>
-            Edit <code>src/App.js</code> and sasddve to reload.
-          </h1>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+        <div className="container-fluid">
+          <div className="row text-align-center justify-content-center underconstruction">
+            <p className="pt-5 my-0 pb-0 h-auto d-inline-block">#</p>
+            <p className="pt-5 my-0 pb-0 h-auto d-inline-block">underconstruction</p>
+          </div>
+          <div className="row text-align-center justify-content-center pt-0 mt-0">
+            <h1>Coming Soon</h1>
+          </div>
+          <div className="row text-align-center justify-content-center">
+            <p>Check out online portfolios:</p>
+          </div>
         </div>
       </section>
       <footer className="container-fluid row m-0">

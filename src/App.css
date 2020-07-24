@@ -57,7 +57,18 @@ html .profile-engineer h5 {
   font-weight: 300;
   /* font-style: normal; */
 }
-
+.mail {
+  display: flex;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  z-index: 1030;
+}
 .image-cropper {
   margin-top: -111px;
   width: 168px;
@@ -95,7 +106,7 @@ html .coming-soon-section {
   background-image: url(./assets/images/hello-i-m-nik-MAgPyHRO0AA-unsplash.jpg);
 
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #000;
   height: 90vh;
   font-family: "Raleway", sans-serif;
   /* font-family: 'Dubai'; */
@@ -105,6 +116,10 @@ html .coming-soon-section {
   background-size: 118%;
   background-repeat: no-repeat;
   background-position: top 58% left 95%;
+}
+
+.coming-soon-section h1 {
+  font-weight: 900;
 }
 
 footer {
