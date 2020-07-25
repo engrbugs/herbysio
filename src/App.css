@@ -107,22 +107,21 @@ html .profile-engineer h5 {
 
 html .coming-soon-section {
   background-color: white;
-  /* background-image: url(./assets/images/hello-i-m-nik-MAgPyHRO0AA-unsplash.jpg); */
   background-image: url(./assets/images/hello-i-m-nik-MAgPyHRO0AA-small.jpg);
-  background-image: 
+  background-image:
     -webkit-image-set(
       "./assets/images/hello-i-m-nik-MAgPyHRO0AA-small.jpg" 1x,
       "./assets/images/hello-i-m-nik-MAgPyHRO0AA-medium.jpg" 2x,
     );
-  background-image: 
+  background-image:
     image-set(
       "./assets/images/hello-i-m-nik-MAgPyHRO0AA-small.jpg" 1x,
       "./assets/images/hello-i-m-nik-MAgPyHRO0AA-medium.jpg" 2x,
     );
-  font-size: calc(10px + 2vmin);
   color: #000;
   height: 90vh;
   font-family: "Raleway", sans-serif;
+  font-size: calc(10px + 2vmin);
   /* font-family: 'Dubai'; */
   font-weight: 300;
   /* font-style: normal; */
@@ -135,12 +134,12 @@ html .coming-soon-section {
   (min-width: 800px) {
     html .coming-soon-section {
     background-image: url(./assets/images/hello-i-m-nik-MAgPyHRO0AA-large.jpg);
-    background-image: 
+    background-image:
       -webkit-image-set(
         "./assets/images/hello-i-m-nik-MAgPyHRO0AA-large.jpg" 1x,
         "./assets/images/hello-i-m-nik-MAgPyHRO0AA-extralarge.jpg" 2x,
       );
-    background-image: 
+    background-image:
       image-set(
         "./assets/images/hello-i-m-nik-MAgPyHRO0AA-large.jpg" 1x,
         "./assets/images/hello-i-m-nik-MAgPyHRO0AA-extralarge.jpg" 2x,
@@ -154,29 +153,29 @@ html .coming-soon-section {
 
 .coming-soon-section .underconstruction {
   font-weight: 800;
-  font-size: 12px;
-  letter-spacing: .2px;
+  font-size: 0.8rem;
+  letter-spacing: 0.01rem;
 }
 
 .coming-soon-section .pound{
   color: #54a0ff;
   font-weight: 900;
-  font-size: 11px;
-  letter-spacing: 1px;
+  font-size: 0.75rem;
+  letter-spacing: 0.02rem;
 
 }
 
 .coming-soon-section .checkout{
   color: #576574;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
   /* letter-spacing: 1px; */
 
 }
 
 .coming-soon-section h1 {
   font-weight: 800;
-  letter-spacing: .5px;
+  letter-spacing: 0.05rem;
 }
 
 footer {
@@ -186,4 +185,55 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+
+.carousel {
+  width: 24rem;
+  margin-top: .6rem;
+  margin-left: 18.8rem;
+  border-radius: 5px;
+  box-shadow: -1px 15px 30px -12px black;
+  /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); */
+  /* box-shadow: 0 3.2px 2.2px rgba(0, 0, 0, 0.02),
+  0 7px 5.4px rgba(0, 0, 0, 0.028), 0 12.1px 10.1px rgba(0, 0, 0, 0.035),
+  0 19.8px 18.1px rgba(0, 0, 0, 0.042), 0 34.7px 33.8px rgba(0, 0, 0, 0.05),
+  0 81px 81px rgba(0, 0, 0, 0.07); */
+  height: 16rem;
+  overflow: hidden;
+  /* border: 1px solid #e5e5e5; */
+}
+
+.carousel-indicators {
+  display: none;
+  position: absolute;
+  margin-bottom: -30px;
+  }
+
+
+
+
+html .carousel-control-prev-icon {
+  margin-top: -8rem;
+}
+
+html .carousel-control-next-icon {
+  margin-top: -8rem;
+}
+
+html .card {
+  border: none;
+  border-radius: 5px;
+}
+
+
+.card-img-top {
+  /* width: 100%; */
+  /* display: block; */
+  /* margin: 0 auto; */
+  height: 8rem;
+  object-fit: cover;
+  /* object-position: 50% 50%; */
+
+
 }
