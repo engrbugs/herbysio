@@ -23,3 +23,26 @@
   width: 120px;
   cursor: pointer;
 }
+
+
+
+.mail-mobile-cropper {
+  height: 68px;
+  overflow: hidden;
+  border-radius: 50%;
+  z-index: 10;
+  box-shadow: -1px 15px 30px -12px black;
+  user-select: none;
+  background-color: #2d76b0;
+}
+
+
+#mail-icon-mobile {
+  margin-top: 5px;
+  width: 68px;
+  cursor: pointer;
+/* background-color: tomato; */
+  
+}
+
+

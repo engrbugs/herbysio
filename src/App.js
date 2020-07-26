@@ -116,7 +116,7 @@ function App() {
       </footer>
        */}
              <footer className="container-fluid row m-0">
-        <FooterIconMobile />
+        <FooterIcon />
       </footer>
     </div>
   );

@@ -127,9 +127,7 @@ html .profile-engineer h5 {
   background-position: top 38% left 100%;
 }
 @media (min-width: 900px) {
-  @media screen {
-    
-  }
+
   /* MOBILE Mode */
   .coming-soon-section {
     background-image: url(./assets/images/hello-i-m-nik-MAgPyHRO0AA-large.jpg);
@@ -201,7 +199,7 @@ html .profile-engineer h5 {
   text-align: center;
 } */
 footer {
-  background-color: white;
+  background-color: #222f3e;
   height: 10vh;
   font-size: 20px;
   justify-content: center;

@@ -61,6 +61,20 @@ export function FooterIconMobile() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <a
     className="align-self-center social-link social-link--linkedin"
     href="https://www.linkedin.com/in/herbysio/"

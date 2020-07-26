@@ -52,30 +52,3 @@
   }
 
 
-
-
-  /* top green #5CA4A9 */
-.st0 {
-  fill: #5ca4a9;
-}
-/* paper #E6EBE0*/
-.st1 {
-  fill: #f1faee;
-}
-/* pen */
-.st2 {
-  fill: #cbccca;
-}
-/* left red #ED6A5A*/
-.st3 {
-  fill: #ed6a5a;
-}
-/* right yellow  #F4F1BB*/
-.st4 {
-  fill: white;
-}
-
-#mail-icon {
-  width: 120px;
-  cursor: pointer;
-}
