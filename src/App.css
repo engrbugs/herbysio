@@ -56,7 +56,11 @@ html .profile-engineer h5 {
   font-weight: 300;
   /* font-style: normal; */
 }
-
+@media (max-width: 900px) {
+  .welcome-section {
+  display: none;
+  }
+}
 .mail {
   display: flex;
   position: absolute;
@@ -123,6 +127,10 @@ html .profile-engineer h5 {
   background-position: top 38% left 100%;
 }
 @media (min-width: 900px) {
+  @media screen {
+    
+  }
+  /* MOBILE Mode */
   .coming-soon-section {
     background-image: url(./assets/images/hello-i-m-nik-MAgPyHRO0AA-large.jpg);
     background-image: -webkit-image-set(
@@ -137,6 +145,15 @@ html .profile-engineer h5 {
     background-size: 118%;
     background-repeat: no-repeat;
     background-position: top 48% left 95%;
+
+    color: #000;
+  height: 90vh;
+  font-family: "Raleway", sans-serif;
+  font-size: calc(10px + 2vmin);
+  /* font-family: 'Dubai'; */
+  font-weight: 300;
+  /* font-style: normal; */
+
   }
 }
 
@@ -184,6 +201,13 @@ footer {
   text-align: center;
 }
 /* Coming Soon Section END*/
+@media (max-width: 900px) {
+  @media (max-aspect-ratio: 560/500) {
+    footer {
+      display: none !important;
+      }
+    }
+}
 
 /* BootStrap Override CSS START*/
 html .carousel {
