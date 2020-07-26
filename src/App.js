@@ -6,7 +6,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Carousel, Card, Button } from "react-bootstrap";
 import EmailMe from "./components/email-icon.js";
-import FooterIcon from "./components/footer-icon";
+import FooterIcon, { FooterIconMobile } from "./components/footer-icon";
 import ScrollDownArrow from "./components/scroll-down-arrow.js";
 import DiagonalSection from "./components/diagonal-section.js";
 import "./components/tool-tip.css";
@@ -111,8 +111,12 @@ function App() {
           </div>
         </div>
       </section>
-      <footer className="container-fluid row m-0">
-        <FooterIcon />
+      {/* <footer className="container-fluid row m-0">
+        <FooterIconMobile />
+      </footer>
+       */}
+             <footer className="container-fluid row m-0">
+        <FooterIconMobile />
       </footer>
     </div>
   );

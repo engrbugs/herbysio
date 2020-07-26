@@ -192,22 +192,31 @@ html .profile-engineer h5 {
   /* letter-spacing: 1px; */
 }
 
-footer {
+/* footer {
   background-color: #222f3e;
   height: 10vh;
   font-size: 20px;
   justify-content: center;
   align-items: center;
   text-align: center;
+} */
+footer {
+  background-color: white;
+  height: 10vh;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-/* Coming Soon Section END*/
-@media (max-width: 900px) {
+/* MOBILE MODE */
+/* @media (max-width: 900px) {
   @media (max-aspect-ratio: 560/500) {
     footer {
       display: none !important;
       }
     }
-}
+} */
+/* Coming Soon Section END*/
 
 /* BootStrap Override CSS START*/
 html .carousel {
@@ -237,11 +246,11 @@ html .carousel {
 }
 
 html .carousel-control-prev-icon {
-  margin-top: -8rem;
+  margin-top: -21vh;
 }
 
 html .carousel-control-next-icon {
-  margin-top: -8rem;
+  margin-top: -21vh;
 }
 
 html .card {
