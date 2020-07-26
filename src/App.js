@@ -23,21 +23,13 @@ export const WEBSITE_EMAIL = "engrherbysio@gmail.com";
 
 function App() {
   const [index, setIndex] = useState(0);
-  const [show, setShow] = useState(false);
-  const target = useRef(null);
-
-  const renderTooltip = (props) => (
-    <Tooltip id="button-tooltip" {...props}>
-      Simple tooltip
-    </Tooltip>
-  );
-
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
+
   return (
     <div className="App grid">
-      {/* <header className="container-fluid welcome-section p-0 m-0">
+      <header className="container-fluid welcome-section p-0 m-0">
         <div className="mail">
           <p className="tooltip--left" data-tooltip="email me">
             <EmailMe />
@@ -68,52 +60,63 @@ function App() {
             </div>
           </div>
         </div>
-      </header> */}
+      </header>
       <section id="coming-soon" className="coming-soon-section">
         <div className="container-fluid">
           <div className="row text-align-center justify-content-center">
-            <p className="pt-5 my-0 pb-0 h-auto d-inline-block pound">#</p>
-            <p className="pt-5 my-0 pb-0 h-auto d-inline-block underconstruction">
+            <p className="h-auto d-inline-block pound">#</p>
+            <p className="h-auto d-inline-block underconstruction">
               underconstruction
             </p>
           </div>
-          <div className="row text-align-center justify-content-center pt-0 mt-2">
+          <div className="row text-align-center justify-content-center">
             <h1>Coming Soon</h1>
           </div>
           <div className="row text-align-center justify-content-center mt-2 checkout">
             <p>Check out online portfolios:</p>
           </div>
 
-        <div className="row text-align-center justify-content-center">
-        <Carousel activeIndex={index} onSelect={handleSelect}>
-            <Carousel.Item>
-              <Card style={{ width: "24rem", height: "16rem" }}>
-                <Card.Img variant="top" src={fccLogo} 
-                alt="FCC logo"/>
-                <Card.Body>
-                  <Card.Title>freeCodeCamp</Card.Title>
-                  <Card.Text>
-                  Learn to code at home. Build projects. Earn certifications.
-                  </Card.Text>
-                  <Button variant="primary">View Profile</Button>
-                </Card.Body>
-              </Card>
-              
-            </Carousel.Item>
-            <Carousel.Item>
-            <Card style={{ width: "24rem", height: "16rem" }}>
-                <Card.Img variant="top" src={ghLogo} alt="GitHub logo"/>
-                <Card.Body>
-                  <Card.Title>GitHub</Card.Title>
-                  <Card.Text>
-                  Open source repositories
-                  </Card.Text>
-                  <Button variant="primary">Open GitHub</Button>
-                </Card.Body>
-              </Card>
-            </Carousel.Item>
-          </Carousel>
-        </div>
+          <div className="row text-align-center justify-content-center">
+            <Carousel activeIndex={index} onSelect={handleSelect}>
+              <Carousel.Item>
+                <Card style={{ width: "30vw", height: "42vh" }}>
+                  <Card.Img variant="top" src={fccLogo} alt="FCC logo" />
+                  <Card.Body>
+                    <Card.Title>freeCodeCamp</Card.Title>
+                    <Card.Text>
+                      Learn to code at home. Build projects.<br/>Earn
+                      certifications.
+                    </Card.Text>
+                    <Button
+                      href="https://www.freecodecamp.org/engrbugs/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      variant="primary"
+                    >
+                      View Profile
+                    </Button>
+                  </Card.Body>
+                </Card>
+              </Carousel.Item>
+              <Carousel.Item>
+                <Card style={{ width: "30vw", height: "42vh" }}>
+                  <Card.Img variant="top" src={ghLogo} alt="GitHub logo" />
+                  <Card.Body>
+                    <Card.Title>GitHub</Card.Title>
+                    <Card.Text>Open source repositories</Card.Text>
+                    <Button
+                      href="https://github.com/engrbugs/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      variant="primary"
+                    >
+                      Open GitHub
+                    </Button>
+                  </Card.Body>
+                </Card>
+              </Carousel.Item>
+            </Carousel>
+          </div>
         </div>
       </section>
       <footer className="container-fluid row m-0">
