@@ -1,18 +1,10 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState, useEffect, useCallback, useRef } from "react";
+import React, { useState } from "react";
 import profilePicture from "./assets/images/profile.jpg";
 import ghLogo from "./assets/images/gh-logo.png";
 import fccLogo from "./assets/images/fcc-logo.png";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {
-  Carousel,
-  Card,
-  Tooltip,
-  OverlayTrigger,
-  Button,
-} from "react-bootstrap";
+import { Carousel, Card, Button } from "react-bootstrap";
 import EmailMe from "./components/email-icon.js";
 import FooterIcon from "./components/footer-icon";
 import ScrollDownArrow from "./components/scroll-down-arrow.js";
@@ -35,7 +27,6 @@ function App() {
             <EmailMe />
           </p>
         </div>
-
         <DiagonalSection />
         <div className="row text-align-center justify-content-center m-0">
           <div className="image-cropper">
@@ -84,8 +75,9 @@ function App() {
                   <Card.Body>
                     <Card.Title>freeCodeCamp</Card.Title>
                     <Card.Text>
-                      Learn to code at home. Build projects.<br/>Earn
-                      certifications.
+                      Learn to code at home. Build projects.
+                      <br />
+                      Earn certifications.
                     </Card.Text>
                     <Button
                       href="https://www.freecodecamp.org/engrbugs/"
@@ -103,7 +95,7 @@ function App() {
                   <Card.Img variant="top" src={ghLogo} alt="GitHub logo" />
                   <Card.Body>
                     <Card.Title>GitHub</Card.Title>
-                    <Card.Text>Open source repositories</Card.Text>
+                    <Card.Text>Open source repositories.</Card.Text>
                     <Button
                       href="https://github.com/engrbugs/"
                       target="_blank"
