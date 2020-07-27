@@ -100,14 +100,14 @@ function App() {
           <div className="row text-align-center justify-content-center">
             <h1>Coming Soon</h1>
           </div>
-          <div className="row text-align-center justify-content-center mt-2 checkout">
+          <div className="row text-align-center justify-content-center checkout">
             <p>Check out online portfolios:</p>
           </div>
 
           <div className="row text-align-center justify-content-center">
             <Carousel activeIndex={index} onSelect={handleSelect}>
               <Carousel.Item>
-                <Card style={{ width: "30vw", height: "42vh" }}>
+                <Card>
                   <Card.Img variant="top" src={fccLogo} alt="FCC logo" />
                   <Card.Body>
                     <Card.Title>freeCodeCamp</Card.Title>
@@ -128,7 +128,7 @@ function App() {
                 </Card>
               </Carousel.Item>
               <Carousel.Item>
-                <Card style={{ width: "30vw", height: "42vh" }}>
+                <Card>
                   <Card.Img variant="top" src={ghLogo} alt="GitHub logo" />
                   <Card.Body>
                     <Card.Title>GitHub</Card.Title>

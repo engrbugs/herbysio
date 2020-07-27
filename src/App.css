@@ -1,13 +1,4 @@
 @font-face {
-  font-family: "Dubai";
-  src: url("./assets/fonts/Dubai-Light.woff2") format("woff2"),
-    url("./assets/fonts/Dubai-Light.woff") format("woff"),
-    url("./assets/fonts/DUBAI-LIGHT.TTF") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
   font-family: "DankMono";
   src: url("./assets/fonts/DankMono-Regular.woff2") format("woff2"),
     url("./assets/fonts/DankMono-Regular.woff") format("woff"),
@@ -116,6 +107,13 @@ html .profile-engineer h5 {
     .profile-engineer-mobile-img img {
       width: 20px;
       height: 20px;
+
+      /* None drag */
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
     }
   }
   
@@ -254,6 +252,7 @@ html .profile-engineer h5 {
   }
 }
 
+/* THE THREE STOGGIES */
 .coming-soon-section .underconstruction {
   padding-top: 8vh;
   padding-bottom: 0;
@@ -274,17 +273,6 @@ html .profile-engineer h5 {
   font-size: 0.75rem;
   letter-spacing: 0.02rem;
 }
-
-@media (max-aspect-ratio: 560/500) {
-  .coming-soon-section .pound {
-    padding-top: 4vh;
-    }
-    .coming-soon-section .underconstruction {
-      padding-top: 4vh;
-    }
-
-  }
-
 .coming-soon-section h1 {
   font-weight: 800;
   letter-spacing: 0.05rem;
@@ -298,7 +286,30 @@ html .profile-engineer h5 {
   font-size: 1rem;
   /* letter-spacing: 1px; */
 }
+@media (min-height: 750px) {
+  /* LARGE SCREEN */
+  .coming-soon-section .checkout {
+    margin-top: .25rem;
+  }
+}
+@media (max-aspect-ratio: 560/500) {
+   /* PORTRAIT MODE */
+   .coming-soon-section .pound {
+    padding-top: 4vh;
+    }
+    .coming-soon-section .underconstruction {
+      padding-top: 4vh;
+    }
+  .coming-soon-section h1 {
+    letter-spacing: 0px;
+    margin-bottom: 0;
+    }
+    .coming-soon-section .checkout {
+      margin-top: 0;
+      padding-top: 0;
+    }
 
+  }
 /* footer {
   background-color: #222f3e;
   height: 10vh;
@@ -321,7 +332,7 @@ footer {
 }
 
 
-/* MOBILE MODE */
+/* MOBILE MODE FOOTER */
 @media (max-width: 900px) {
   @media (max-aspect-ratio: 560/500) {
     footer {
@@ -343,7 +354,11 @@ footer {
 
 /* BootStrap Override CSS START*/
 html .carousel {
-  width: 30vw;
+  --cardW: 30vw; 
+  --cardH: 42vh;
+
+  width: var(--cardW);
+  height: var(--cardH);
   margin-top: 2vh;
   margin-left: 30vw;
   border-radius: 5px;
@@ -353,30 +368,44 @@ html .carousel {
   0 7px 5.4px rgba(0, 0, 0, 0.028), 0 12.1px 10.1px rgba(0, 0, 0, 0.035),
   0 19.8px 18.1px rgba(0, 0, 0, 0.042), 0 34.7px 33.8px rgba(0, 0, 0, 0.05),
   0 81px 81px rgba(0, 0, 0, 0.07); */
-  height: 42vh;
+
   overflow: hidden;
   /* border: 1px solid #e5e5e5; */
 }
 @media (min-height: 750px) {
+  /* FOR LARGE SCREEN */
   html .carousel {
-    margin-top: 6vh;
+    margin-top: 7.2vh;
   }
 }
+@media (max-aspect-ratio: 560/500) {
+  /* FOR PORTRAIT */
+  html .carousel {
+    margin-top: 2vh;
+    margin-left: 0;
+    --cardW: 82vw; 
+    --cardH: 38vh;
+  
+    width: var(--cardW);
+    height: var(--cardH);
+  }
+
+}
+
 .carousel-indicators {
   display: none;
   position: absolute;
   margin-bottom: -30px;
 }
 
+html .carousel-control-next-icon,
 html .carousel-control-prev-icon {
-  margin-top: -21vh;
-}
-
-html .carousel-control-next-icon {
-  margin-top: -21vh;
+  margin-top: calc(var(--cardH)/-2)
 }
 
 html .card {
+  width: var(--cardW);
+  height: var(--cardH);
   border: none;
   border-radius: 5px;
 }
@@ -403,7 +432,13 @@ html .card-text {
     height: 11vh;
   }
 }
+@media (max-aspect-ratio: 560/500) {
+  /* FOR PORTRAIT */
+  html .card-text {
+    height: 8vh;
+  }
 
+}
 html .btn-primary {
   /* font-weight: 800; */
   font-size: 1rem;
@@ -414,7 +449,7 @@ html .btn-primary {
   /* width: 100%; */
   /* display: block; */
   /* margin: 0 auto; */
-  height: 20vh;
+  height: calc(var(--cardH)/2);
   object-fit: cover;
   /* None drag */
   user-select: none;
