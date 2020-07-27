@@ -10,6 +10,8 @@ import FooterIcon, { FooterIconMobile } from "./components/footer-icon";
 import ScrollDownArrow from "./components/scroll-down-arrow.js";
 import DiagonalSection from "./components/diagonal-section.js";
 import "./components/tool-tip.css";
+import robot from "./assets/images/machine-learning.svg";
+import abacus from "./assets/images/abacus.svg";
 
 export const WEBSITE_EMAIL = "engrherbysio@gmail.com";
 
@@ -17,6 +19,7 @@ function App() {
   const [index, setIndex] = useState(0);
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
+    
   };
 
   return (
@@ -51,6 +54,37 @@ function App() {
             </div>
           </div>
         </div>
+      </header>
+      <header className="container-fluid welcome-section-mobile p-0 m-0">
+        <div className="profile-name-mobile row text-align-left justify-content-left p-0 m-0 pl-1 ml-2 h-auto pt-1">
+        <h2 className="p-0 m-0">HERBY SIO</h2>
+        </div>
+        <div className="profile-engineer-mobile row text-align-left justify-content-left p-0 m-0 pl-1 mt-0 ml-2">
+
+
+        <div>
+        {`{`}
+        </div>
+        <div className="this-blue-mobile">
+        this
+        </div>
+        <div>
+        .Engineer{`}`} ❤️ (
+        </div>
+<div className="profile-engineer-mobile-img pl-2">
+<img src={robot} alt="Machine Learning" />
+</div>
+<div className="pl-2" style={{color:"#fff"}}>
++
+</div>
+<div className="profile-engineer-mobile-img pl-2">
+<img src={abacus} alt="Math"/>
+</div>
+<div className="pl-2">
+        )
+</div>
+        </div>
+        
       </header>
       <section id="coming-soon" className="coming-soon-section">
         <div className="container-fluid">
@@ -109,15 +143,16 @@ function App() {
               </Carousel.Item>
             </Carousel>
           </div>
+          <div className="footer-mobile container-fluid row m-0">
+        <FooterIconMobile />
+      </div>
         </div>
       </section>
-      {/* <footer className="container-fluid row m-0">
-        <FooterIconMobile />
-      </footer>
-       */}
+
              <footer className="container-fluid row m-0">
         <FooterIcon />
       </footer>
+
     </div>
   );
 }

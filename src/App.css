@@ -1,4 +1,4 @@
-/* @font-face {
+@font-face {
   font-family: "Dubai";
   src: url("./assets/fonts/Dubai-Light.woff2") format("woff2"),
     url("./assets/fonts/Dubai-Light.woff") format("woff"),
@@ -6,7 +6,27 @@
   font-weight: 300;
   font-style: normal;
   font-display: swap;
-} */
+}
+@font-face {
+  font-family: "DankMono";
+  src: url("./assets/fonts/DankMono-Regular.woff2") format("woff2"),
+    url("./assets/fonts/DankMono-Regular.woff") format("woff"),
+    url("./assets/fonts/DankMono-Regular.ttf") format("truetype"),
+    url('./assets/fonts/DankMono-Regular.svg#DankMono') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DankMono";
+  src: url("./assets/fonts/DankMono-Italic.woff2") format("woff2"),
+    url("./assets/fonts/DankMono-Italic.woff") format("woff"),
+    url("./assets/fonts/DankMono-Italic.ttf") format("truetype"),
+    url('./assets/fonts/DankMono-Regular.svg#DankMono-Italic') format('svg');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;800;900&display=swap");
 
 * {
@@ -56,11 +76,50 @@ html .profile-engineer h5 {
   font-weight: 300;
   /* font-style: normal; */
 }
-@media (max-width: 900px) {
-  .welcome-section {
+.welcome-section-mobile {
   display: none;
-  }
 }
+@media (max-width: 900px) {
+  /* MOBILE MODE */
+  @media (max-aspect-ratio: 560/500) {
+    .welcome-section {
+      display: none;
+      }
+    .welcome-section-mobile {
+      /* background-color: #222f3e; */
+      display: inline-block;
+      height: 72px;
+      background-color: #000;
+      color: #fff;
+
+      font-family: 'DankMono';
+      font-weight: normal;
+      font-style: normal;
+    }
+    .profile-name-mobile h2 {
+      font-family: "Raleway", sans-serif;
+      font-weight: 900;
+    }
+    .profile-engineer-mobile {
+      font-size: 18px;
+      color: #5FB6FE
+    }
+    .pale-blue-mobile {
+      color: #5FB6FE ;
+    }
+    .this-blue-mobile {
+      font-family: 'DankMono';
+      color: #1672D6;
+      font-style: italic;
+    }
+    .profile-engineer-mobile-img img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  
+}
+
 .mail {
   display: flex;
   position: absolute;
@@ -103,32 +162,71 @@ html .profile-engineer h5 {
 /* Welcome Header END*/
 
 /* Coming Soon START*/
-.coming-soon-section {
-  background-color: white;
-  background-image: url(./assets/images/hello-i-m-nik-MAgPyHRO0AA-small.jpg);
-  background-image: -webkit-image-set(
-    "./assets/images/hello-i-m-nik-MAgPyHRO0AA-small.jpg" 1x,
-    "./assets/images/hello-i-m-nik-MAgPyHRO0AA-medium.jpg" 2x
-  );
-  background-image: image-set(
-    "./assets/images/hello-i-m-nik-MAgPyHRO0AA-small.jpg" 1x,
-    "./assets/images/hello-i-m-nik-MAgPyHRO0AA-medium.jpg" 2x
-  );
-  color: #000;
-  height: 90vh;
-  font-family: "Raleway", sans-serif;
-  font-size: calc(10px + 2vmin);
-  /* font-family: 'Dubai'; */
-  font-weight: 300;
-  /* font-style: normal; */
 
-  background-size: 118%;
-  background-repeat: no-repeat;
-  background-position: top 38% left 100%;
+
+@media (max-width: 900px) {
+  /* MOBILE MODE */
+  @media (min-aspect-ratio: 560/500) {
+    /* LANDSCAPE MODE */
+    .coming-soon-section {
+
+      background-color: white;
+      background-image: url(./assets/images/hello-i-m-nik-MAgPyHRO0AA-small.jpg);
+      background-image: -webkit-image-set(
+        "./assets/images/hello-i-m-nik-MAgPyHRO0AA-small.jpg" 1x,
+        "./assets/images/hello-i-m-nik-MAgPyHRO0AA-medium.jpg" 2x
+      );
+      background-image: image-set(
+        "./assets/images/hello-i-m-nik-MAgPyHRO0AA-small.jpg" 1x,
+        "./assets/images/hello-i-m-nik-MAgPyHRO0AA-medium.jpg" 2x
+      );
+      color: #000;
+      height: 90vh;
+      font-family: "Raleway", sans-serif;
+      font-size: calc(10px + 2vmin);
+      /* font-family: 'Dubai'; */
+      font-weight: 300;
+      /* font-style: normal; */
+      
+      background-size: 118%;
+      background-repeat: no-repeat;
+      background-position: top 38% left 100%;
+    }
+  }
+
+  @media (max-aspect-ratio: 560/500) {
+    /* PORTRAIT MODE */
+    .coming-soon-section {
+
+      background-color: white;
+      background-image: url(./assets/images/hello-i-m-nik-MAgPyHRO0AA-small-rotated.jpg);
+      background-image: -webkit-image-set(
+        "./assets/images/hello-i-m-nik-MAgPyHRO0AA-small-rotated.jpg" 1x,
+        "./assets/images/hello-i-m-nik-MAgPyHRO0AA-medium-rotated.jpg" 2x
+      );
+      background-image: image-set(
+        "./assets/images/hello-i-m-nik-MAgPyHRO0AA-small-rotated.jpg" 1x,
+        "./assets/images/hello-i-m-nik-MAgPyHRO0AA-medium-rotated.jpg" 2x
+      );
+      color: #000;
+      /* height: 93vh; MAX VH for mobile */
+      height: calc(93vh - 80px); 
+      font-family: "Raleway", sans-serif;
+      font-size: calc(10px + 2vmin);
+      /* font-family: 'Dubai'; */
+      font-weight: 300;
+      /* font-style: normal; */
+
+      background-size: 118%;
+      background-repeat: no-repeat;
+      background-position: top -120% left 100%;
+
+      }
+    }
 }
-@media (min-width: 900px) {
 
-  /* MOBILE Mode */
+/* DESKTOP MODE */
+@media (min-width: 900px) {
   .coming-soon-section {
     background-image: url(./assets/images/hello-i-m-nik-MAgPyHRO0AA-large.jpg);
     background-image: -webkit-image-set(
@@ -199,6 +297,9 @@ html .profile-engineer h5 {
   text-align: center;
 } */
 footer {
+
+
+
   background-color: #222f3e;
   height: 10vh;
   font-size: 20px;
@@ -206,14 +307,29 @@ footer {
   align-items: center;
   text-align: center;
 }
+
+.footer-mobile {
+  display: none !important;
+}
+
+
 /* MOBILE MODE */
-/* @media (max-width: 900px) {
+@media (max-width: 900px) {
   @media (max-aspect-ratio: 560/500) {
     footer {
       display: none !important;
       }
     }
-} */
+    .footer-mobile {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      display: flex !important;
+      position: fixed;
+      top: 85vh;
+      height: 0;
+    }
+}
 /* Coming Soon Section END*/
 
 /* BootStrap Override CSS START*/
