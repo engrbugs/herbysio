@@ -23,7 +23,7 @@ function App() {
   };
 
   return (
-    <div className="App grid">
+    <div className="App grid p-0 m-0">
       <header className="container-fluid welcome-section p-0 m-0">
         <div className="mail">
           <p className="tooltip--left" data-tooltip="email me">
@@ -86,6 +86,9 @@ function App() {
         </div>
         
       </header>
+
+
+
       <section id="coming-soon" className="coming-soon-section">
         <div className="container-fluid">
           <div className="row text-align-center justify-content-center">

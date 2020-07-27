@@ -12,7 +12,7 @@
   src: url("./assets/fonts/DankMono-Regular.woff2") format("woff2"),
     url("./assets/fonts/DankMono-Regular.woff") format("woff"),
     url("./assets/fonts/DankMono-Regular.ttf") format("truetype"),
-    url('./assets/fonts/DankMono-Regular.svg#DankMono') format('svg');
+    url('./assets/fonts/DankMono-Regular.svg#DankMono-Regular') format('svg');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -39,10 +39,11 @@ html {
 
 body {
   /* overflow:hidden; */
+  background-color: teal;
 }
 
 .App {
-  background-color: #f1faee;
+  background-color: black;
   text-align: center;
 }
 
@@ -195,10 +196,9 @@ html .profile-engineer h5 {
   }
 
   @media (max-aspect-ratio: 560/500) {
-    /* PORTRAIT MODE */
+    /* MOBILE PORTRAIT MODE */
     .coming-soon-section {
-
-      background-color: white;
+      background-color: black;
       background-image: url(./assets/images/hello-i-m-nik-MAgPyHRO0AA-small-rotated.jpg);
       background-image: -webkit-image-set(
         "./assets/images/hello-i-m-nik-MAgPyHRO0AA-small-rotated.jpg" 1x,
@@ -210,16 +210,17 @@ html .profile-engineer h5 {
       );
       color: #000;
       /* height: 93vh; MAX VH for mobile */
-      height: calc(93vh - 80px); 
+      height: calc(94vh - 80px); 
       font-family: "Raleway", sans-serif;
       font-size: calc(10px + 2vmin);
       /* font-family: 'Dubai'; */
       font-weight: 300;
       /* font-style: normal; */
 
-      background-size: 118%;
+      background-size: 180%;
       background-repeat: no-repeat;
-      background-position: top -120% left 100%;
+      background-position: center bottom;
+      
 
       }
     }
@@ -274,6 +275,16 @@ html .profile-engineer h5 {
   letter-spacing: 0.02rem;
 }
 
+@media (max-aspect-ratio: 560/500) {
+  .coming-soon-section .pound {
+    padding-top: 4vh;
+    }
+    .coming-soon-section .underconstruction {
+      padding-top: 4vh;
+    }
+
+  }
+
 .coming-soon-section h1 {
   font-weight: 800;
   letter-spacing: 0.05rem;
@@ -297,9 +308,6 @@ html .profile-engineer h5 {
   text-align: center;
 } */
 footer {
-
-
-
   background-color: #222f3e;
   height: 10vh;
   font-size: 20px;
@@ -328,6 +336,7 @@ footer {
       position: fixed;
       top: 85vh;
       height: 0;
+      left: 1vW;
     }
 }
 /* Coming Soon Section END*/
