@@ -1,7 +1,6 @@
 import React from "react";
 import "./footer-icon.css";
 
-import { WEBSITE_EMAIL } from "../App.js";
 
 function FooterIcon() {
     return (
@@ -82,6 +81,7 @@ export function FooterIconMobile() {
     rel="noopener noreferrer"
     id="linkedin"
   >
+    <div className="footer-mobile-cropper">
     <svg
       className="social-svg-mobile"
       viewBox="0 0 600 600"
@@ -89,17 +89,17 @@ export function FooterIconMobile() {
     >
       
     {/* Need this definition to make a drop shadow - based on examples from many articles, including svg spec */}
-    <filter id="dropshadow" height="130%">
-  <feGaussianBlur in="SourceAlpha" stdDeviation="16"/>
-  <feOffset dx="20" dy="20" result="offsetblur"/> 
+    {/* <filter id="dropshadow" height="150%">
+  <feGaussianBlur in="SourceAlpha" stdDeviation="22"/>
+  <feOffset dx="10" dy="90" result="offsetblur"/> 
   <feComponentTransfer>
-    <feFuncA type="linear" slope="0.5"/> 
+    <feFuncA type="linear" slope="0.45"/> 
   </feComponentTransfer>
   <feMerge> 
     <feMergeNode/>
     <feMergeNode in="SourceGraphic"/>
   </feMerge>
-</filter>
+</filter> */}
 
 
       <g className="social-group-mobile" fill="none" fillRule="evenodd">
@@ -109,7 +109,6 @@ export function FooterIconMobile() {
           cx="300"
           cy="300"
           r="252.5"
-          filter="url(#dropshadow)"
         />
         <path
           className="social-group__icon-mobile"
@@ -119,6 +118,7 @@ export function FooterIconMobile() {
         />
       </g>
     </svg>
+    </div>
   </a>
 
   );

@@ -156,77 +156,69 @@ function EmailMe() {
 export default EmailMe;
 
 export function EmailMeMobile() {
- 
-
   return (
-
-<a
+    <a
       href={`mailto:${WEBSITE_EMAIL}`}
       target="_blank"
       rel="noopener noreferrer"
     >
       <div className="mail-mobile-cropper">
-      <svg
-version="1.1"
-id="mail-icon-mobile"
-xmlns="http://www.w3.org/2000/svg"
-xmlnsXlink="http://www.w3.org/1999/xlink"
-strokeWidth="5%"
-x="0px"
-y="0px"
-width="50px"
-height="50px"
-viewBox="96.3 -4.7 45.1 52.2"
-style={{ accumulate: "new 96.3 -4.7 45.1 46.2" }}
-xmlSpace="preserve"
-      >
-        <path
-          className="st0"
-          // stroke="white"
-          d="M138.2,10.5H99.5c-1.7,0-3.1,1.4-3.1,3.1v24.8c0,1.7,1.4,3.1,3.1,3.1h38.7c1.7,0,3.1-1.4,3.1-3.1V13.6
+        <svg
+          version="1.1"
+          id="mail-icon-mobile"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+          strokeWidth="5%"
+          x="0px"
+          y="0px"
+          width="50px"
+          height="50px"
+          viewBox="96.3 -4.7 45.1 52.2"
+          style={{ accumulate: "new 96.3 -4.7 45.1 46.2" }}
+          xmlSpace="preserve"
+        >
+          <path
+            className="st0"
+            // stroke="white"
+            d="M138.2,10.5H99.5c-1.7,0-3.1,1.4-3.1,3.1v24.8c0,1.7,1.4,3.1,3.1,3.1h38.7c1.7,0,3.1-1.4,3.1-3.1V13.6
       C141.3,11.9,139.9,10.5,138.2,10.5z"
-        />
-        <path
-          className="st0"
-          d="M125.6,30.7c-3.7-2.6-6.6-4.6-6.8-4.7l0,0L125.6,30.7z"
-        />
-        <path
-          id="env-lid"
-          className="st0"
-          d="M118.9,26L118.9,26c0,0,16-11.1,21.4-14.8c-0.5-0.5-1.2-0.8-2-0.8H99.5c-0.8,0-1.5,0.3-2,0.8
+          />
+          <path
+            className="st0"
+            d="M125.6,30.7c-3.7-2.6-6.6-4.6-6.8-4.7l0,0L125.6,30.7z"
+          />
+          <path
+            id="env-lid"
+            className="st0"
+            d="M118.9,26L118.9,26c0,0,16-11.1,21.4-14.8c-0.5-0.5-1.2-0.8-2-0.8H99.5c-0.8,0-1.5,0.3-2,0.8
       L118.9,26L118.9,26z"
-        />
-        
-        
-        <path
-          className="st3"
-          // stroke="white"
-          d="M97.6,11.1c-0.6,0.5-1.3,1.5-1.3,2.4v24.9c0,1.7,1.4,3.1,3.1,3.1h38.8c0.8,0,1.4-0.3,2-0.7
+          />
+
+          <path
+            className="st3"
+            // stroke="white"
+            d="M97.6,11.1c-0.6,0.5-1.3,1.5-1.3,2.4v24.9c0,1.7,1.4,3.1,3.1,3.1h38.8c0.8,0,1.4-0.3,2-0.7
       C137.1,38.7,97.6,11.1,97.6,11.1z"
-        />
-        <path
-          className="st4"
-          // stroke="white"
-          d="M140.3,11.2c-5.4,3.7-21.4,14.8-21.4,14.8l0,0c0.2,0.1,18.2,12.7,21.3,14.8c0.7-0.6,1.2-1.4,1.2-2.3v-25
+          />
+          <path
+            className="st4"
+            // stroke="white"
+            d="M140.3,11.2c-5.4,3.7-21.4,14.8-21.4,14.8l0,0c0.2,0.1,18.2,12.7,21.3,14.8c0.7-0.6,1.2-1.4,1.2-2.3v-25
       C141.3,12.6,140.9,11.8,140.3,11.2z"
-        />
-        {/*  CHANGE THE ENVELOPE
+          />
+          {/*  CHANGE THE ENVELOPE
               <path
           class="st3"
           stroke="white"
           d="M 97.6 11.1 c -0.6 0.5 -1.3 1.5 -1.3 2.4 v 24.9 c 0 1.7 1.4 3.1 3.1 3.1 h 38.8 c 0.8 0 1.4 -0.3 2 -0.7 c 0.7 -0.6 1.2 -1.4 1.2 -2.3 v -25 c -0.1 -0.9 -0.5 -1.7 -1.1 -2.3 c -5.4 3.7 -21.4 14.8 -21.4 14.8z"
         /> */}
-        {/*  ORIGINAL
+          {/*  ORIGINAL
           <path class="st3" d="M97.6,11.1c-0.6,0.5-1.3,1.5-1.3,2.4v24.9c0,1.7,1.4,3.1,3.1,3.1h38.8c0.8,0,1.4-0.3,2-0.7
             C137.1,38.7,97.6,11.1,97.6,11.1z"/>
           <path class="st4" d="M140.3,11.2c-5.4,3.7-21.4,14.8-21.4,14.8l0,0c0.2,0.1,18.2,12.7,21.3,14.8c0.7-0.6,1.2-1.4,1.2-2.3v-25
             C141.3,12.6,140.9,11.8,140.3,11.2z"/> */}
-      </svg>
+        </svg>
       </div>
-      
     </a>
-
-
   );
 }
-

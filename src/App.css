@@ -3,7 +3,7 @@
   src: url("./assets/fonts/DankMono-Regular.woff2") format("woff2"),
     url("./assets/fonts/DankMono-Regular.woff") format("woff"),
     url("./assets/fonts/DankMono-Regular.ttf") format("truetype"),
-    url('./assets/fonts/DankMono-Regular.svg#DankMono-Regular') format('svg');
+    url("./assets/fonts/DankMono-Regular.svg#DankMono-Regular") format("svg");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -13,7 +13,7 @@
   src: url("./assets/fonts/DankMono-Italic.woff2") format("woff2"),
     url("./assets/fonts/DankMono-Italic.woff") format("woff"),
     url("./assets/fonts/DankMono-Italic.ttf") format("truetype"),
-    url('./assets/fonts/DankMono-Regular.svg#DankMono-Italic') format('svg');
+    url("./assets/fonts/DankMono-Regular.svg#DankMono-Italic") format("svg");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -76,7 +76,7 @@ html .profile-engineer h5 {
   @media (max-aspect-ratio: 560/500) {
     .welcome-section {
       display: none;
-      }
+    }
     .welcome-section-mobile {
       /* background-color: #222f3e; */
       display: inline-block;
@@ -84,7 +84,7 @@ html .profile-engineer h5 {
       background-color: #000;
       color: #fff;
 
-      font-family: 'DankMono';
+      font-family: "DankMono";
       font-weight: normal;
       font-style: normal;
     }
@@ -94,14 +94,14 @@ html .profile-engineer h5 {
     }
     .profile-engineer-mobile {
       font-size: 18px;
-      color: #5FB6FE
+      color: #5fb6fe;
     }
     .pale-blue-mobile {
-      color: #5FB6FE ;
+      color: #5fb6fe;
     }
     .this-blue-mobile {
-      font-family: 'DankMono';
-      color: #1672D6;
+      font-family: "DankMono";
+      color: #1672d6;
       font-style: italic;
     }
     .profile-engineer-mobile-img img {
@@ -109,14 +109,13 @@ html .profile-engineer h5 {
       height: 20px;
 
       /* None drag */
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
+      user-select: none;
+      -moz-user-select: none;
+      -webkit-user-drag: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
     }
   }
-  
 }
 
 .mail {
@@ -162,13 +161,11 @@ html .profile-engineer h5 {
 
 /* Coming Soon START*/
 
-
 @media (max-width: 900px) {
   /* MOBILE MODE */
   @media (min-aspect-ratio: 560/500) {
     /* LANDSCAPE MODE */
     .coming-soon-section {
-
       background-color: white;
       background-image: url(./assets/images/hello-i-m-nik-MAgPyHRO0AA-small.jpg);
       background-image: -webkit-image-set(
@@ -186,7 +183,7 @@ html .profile-engineer h5 {
       /* font-family: 'Dubai'; */
       font-weight: 300;
       /* font-style: normal; */
-      
+
       background-size: 118%;
       background-repeat: no-repeat;
       background-position: top 38% left 100%;
@@ -208,7 +205,7 @@ html .profile-engineer h5 {
       );
       color: #000;
       /* height: 93vh; MAX VH for mobile */
-      height: calc(94vh - 80px); 
+      height: calc(94vh - 80px);
       font-family: "Raleway", sans-serif;
       font-size: calc(10px + 2vmin);
       /* font-family: 'Dubai'; */
@@ -218,10 +215,8 @@ html .profile-engineer h5 {
       background-size: 180%;
       background-repeat: no-repeat;
       background-position: center bottom;
-      
-
-      }
     }
+  }
 }
 
 /* DESKTOP MODE */
@@ -242,13 +237,12 @@ html .profile-engineer h5 {
     background-position: top 48% left 95%;
 
     color: #000;
-  height: 90vh;
-  font-family: "Raleway", sans-serif;
-  font-size: calc(10px + 2vmin);
-  /* font-family: 'Dubai'; */
-  font-weight: 300;
-  /* font-style: normal; */
-
+    height: 90vh;
+    font-family: "Raleway", sans-serif;
+    font-size: calc(10px + 2vmin);
+    /* font-family: 'Dubai'; */
+    font-weight: 300;
+    /* font-style: normal; */
   }
 }
 
@@ -289,35 +283,27 @@ html .profile-engineer h5 {
 @media (min-height: 750px) {
   /* LARGE SCREEN */
   .coming-soon-section .checkout {
-    margin-top: .25rem;
+    margin-top: 0.25rem;
   }
 }
 @media (max-aspect-ratio: 560/500) {
-   /* PORTRAIT MODE */
-   .coming-soon-section .pound {
+  /* PORTRAIT MODE */
+  .coming-soon-section .pound {
     padding-top: 4vh;
-    }
-    .coming-soon-section .underconstruction {
-      padding-top: 4vh;
-    }
+  }
+  .coming-soon-section .underconstruction {
+    padding-top: 4vh;
+  }
   .coming-soon-section h1 {
     letter-spacing: 0px;
     margin-bottom: 0;
-    }
-    .coming-soon-section .checkout {
-      margin-top: 0;
-      padding-top: 0;
-    }
-
   }
-/* footer {
-  background-color: #222f3e;
-  height: 10vh;
-  font-size: 20px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-} */
+  .coming-soon-section .checkout {
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
+
 footer {
   background-color: #222f3e;
   height: 10vh;
@@ -326,35 +312,46 @@ footer {
   align-items: center;
   text-align: center;
 }
-
+.mail-mobile {
+  display: none !important;
+}
 .footer-mobile {
   display: none !important;
 }
-
 
 /* MOBILE MODE FOOTER */
 @media (max-width: 900px) {
   @media (max-aspect-ratio: 560/500) {
     footer {
       display: none !important;
-      }
     }
-    .footer-mobile {
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      display: flex !important;
-      position: fixed;
-      top: 85vh;
-      height: 0;
-      left: 1vW;
-    }
+  }
+  .footer-mobile {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex !important;
+    position: fixed;
+    top: 83.6vh;
+    height: 0;
+    right: 25vw;
+  }
+  .mail-mobile {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex !important;
+    position: fixed;
+    top: 82vh;
+    height: 0;
+    right: 6vw;
+  }
 }
 /* Coming Soon Section END*/
 
 /* BootStrap Override CSS START*/
 html .carousel {
-  --cardW: 30vw; 
+  --cardW: 30vw;
   --cardH: 42vh;
 
   width: var(--cardW);
@@ -383,13 +380,13 @@ html .carousel {
   html .carousel {
     margin-top: 2vh;
     margin-left: 0;
-    --cardW: 82vw; 
+    --cardW: 82vw;
     --cardH: 38vh;
-  
+
     width: var(--cardW);
     height: var(--cardH);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
   }
-
 }
 
 .carousel-indicators {
@@ -400,7 +397,7 @@ html .carousel {
 
 html .carousel-control-next-icon,
 html .carousel-control-prev-icon {
-  margin-top: calc(var(--cardH)/-2)
+  margin-top: calc(var(--cardH) / -2);
 }
 
 html .card {
@@ -437,7 +434,6 @@ html .card-text {
   html .card-text {
     height: 8vh;
   }
-
 }
 html .btn-primary {
   /* font-weight: 800; */
@@ -449,7 +445,7 @@ html .btn-primary {
   /* width: 100%; */
   /* display: block; */
   /* margin: 0 auto; */
-  height: calc(var(--cardH)/2);
+  height: calc(var(--cardH) / 2);
   object-fit: cover;
   /* None drag */
   user-select: none;

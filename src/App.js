@@ -5,7 +5,7 @@ import fccLogo from "./assets/images/fcc-logo.png";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Carousel, Card, Button } from "react-bootstrap";
-import EmailMe from "./components/email-icon.js";
+import EmailMe, { EmailMeMobile } from "./components/email-icon.js";
 import FooterIcon, { FooterIconMobile } from "./components/footer-icon";
 import ScrollDownArrow from "./components/scroll-down-arrow.js";
 import DiagonalSection from "./components/diagonal-section.js";
@@ -19,7 +19,6 @@ function App() {
   const [index, setIndex] = useState(0);
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
-    
   };
 
   return (
@@ -57,37 +56,24 @@ function App() {
       </header>
       <header className="container-fluid welcome-section-mobile p-0 m-0">
         <div className="profile-name-mobile row text-align-left justify-content-left p-0 m-0 pl-1 ml-2 h-auto pt-1">
-        <h2 className="p-0 m-0">HERBY SIO</h2>
+          <h2 className="p-0 m-0">HERBY SIO</h2>
         </div>
         <div className="profile-engineer-mobile row text-align-left justify-content-left p-0 m-0 pl-1 mt-0 ml-2">
-
-
-        <div>
-        {`{`}
+          <div>{`{`}</div>
+          <div className="this-blue-mobile">this</div>
+          <div>.Engineer{`}`} ❤️ (</div>
+          <div className="profile-engineer-mobile-img pl-2">
+            <img src={robot} alt="ML" />
+          </div>
+          <div className="pl-2" style={{ color: "#fff" }}>
+            +
+          </div>
+          <div className="profile-engineer-mobile-img pl-2">
+            <img src={abacus} alt="Math" />
+          </div>
+          <div className="pl-2">)</div>
         </div>
-        <div className="this-blue-mobile">
-        this
-        </div>
-        <div>
-        .Engineer{`}`} ❤️ (
-        </div>
-<div className="profile-engineer-mobile-img pl-2">
-<img src={robot} alt="Machine Learning" />
-</div>
-<div className="pl-2" style={{color:"#fff"}}>
-+
-</div>
-<div className="profile-engineer-mobile-img pl-2">
-<img src={abacus} alt="Math"/>
-</div>
-<div className="pl-2">
-        )
-</div>
-        </div>
-        
       </header>
-
-
 
       <section id="coming-soon" className="coming-soon-section">
         <div className="container-fluid">
@@ -146,16 +132,18 @@ function App() {
               </Carousel.Item>
             </Carousel>
           </div>
-          <div className="footer-mobile container-fluid row m-0">
-        <FooterIconMobile />
-      </div>
+          <div className="mail-mobile row m-0">
+            <EmailMeMobile />
+          </div>
+          <div className="footer-mobile row m-0">
+            <FooterIconMobile />
+          </div>
         </div>
       </section>
 
-             <footer className="container-fluid row m-0">
+      <footer className="container-fluid row m-0">
         <FooterIcon />
       </footer>
-
     </div>
   );
 }
