@@ -24,8 +24,6 @@
   cursor: pointer;
 }
 
-
-
 .mail-mobile-cropper {
   height: 68px;
   overflow: hidden;
@@ -34,15 +32,11 @@
   box-shadow: -1px 15px 30px -12px black;
   user-select: none;
   background-color: #222f3e;
+  background-image: linear-gradient(#222f3e, #404756);
 }
-
 
 #mail-icon-mobile {
   margin-top: 5px;
   width: 68px;
   cursor: pointer;
-/* background-color: tomato; */
-  
 }
-
-

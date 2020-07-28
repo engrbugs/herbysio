@@ -76,7 +76,9 @@ function App() {
       </header>
 
       <section id="coming-soon" className="coming-soon-section">
+
         <div className="container-fluid">
+          
           <div className="row text-align-center justify-content-center">
             <p className="h-auto d-inline-block pound">#</p>
             <p className="h-auto d-inline-block underconstruction">
