@@ -31,6 +31,7 @@ function App() {
         </div>
         <DiagonalSection />
         <div className="row text-align-center justify-content-center m-0">
+          <div>Hello,</div>
           <div className="image-cropper">
             <img className="profile-pic" src={profilePicture} alt="" />
           </div>
@@ -74,11 +75,8 @@ function App() {
           <div className="pl-2">)</div>
         </div>
       </header>
-
       <section id="coming-soon" className="coming-soon-section">
-
         <div className="container-fluid">
-          
           <div className="row text-align-center justify-content-center">
             <p className="h-auto d-inline-block pound">#</p>
             <p className="h-auto d-inline-block underconstruction">
@@ -91,18 +89,24 @@ function App() {
           <div className="row text-align-center justify-content-center checkout">
             <p>Check out online portfolios:</p>
           </div>
-
           <div className="row text-align-center justify-content-center">
             <Carousel activeIndex={index} onSelect={handleSelect}>
               <Carousel.Item>
                 <Card>
-                  <Card.Img variant="top" src={fccLogo} alt="FCC logo" />
+                  <a
+                    className="card-image-href"
+                    href="https://www.freecodecamp.org/engrbugs/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    id="linkedin"
+                  >
+                    <Card.Img variant="top" src={fccLogo} alt="FCC logo" />
+                  </a>
                   <Card.Body>
                     <Card.Title>freeCodeCamp</Card.Title>
                     <Card.Text>
-                      Learn to code at home. Build projects.
-                      <br />
-                      Earn certifications.
+                      Learn to code at home. Build projects. Earn
+                      certifications.
                     </Card.Text>
                     <Button
                       href="https://www.freecodecamp.org/engrbugs/"
@@ -117,7 +121,15 @@ function App() {
               </Carousel.Item>
               <Carousel.Item>
                 <Card>
-                  <Card.Img variant="top" src={ghLogo} alt="GitHub logo" />
+                  <a
+                    className="card-image-href"
+                    href="https://github.com/engrbugs/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    id="linkedin"
+                  >
+                    <Card.Img variant="top" src={ghLogo} alt="GitHub logo" />
+                  </a>
                   <Card.Body>
                     <Card.Title>GitHub</Card.Title>
                     <Card.Text>Open source repositories.</Card.Text>

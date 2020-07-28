@@ -63,20 +63,31 @@ html .profile-engineer h5 {
   font-size: calc(10px + 2vmin);
   color: #fff;
   height: 100vh;
+  max-height: 200vh;
   font-family: "Raleway", sans-serif;
   font-weight: 300;
 }
 @media (min-aspect-ratio: 560/500) {
   /* LANDSCAPE MODE*/
+  .welcome-section-mobile {
+    display: none;
+  }
   @media (max-width: 900px) {
     /* LANDSCAPE MODE MOBILE*/
+    .welcome-section {
+      height: 168vh;
+    }
+    .arrow {
+      display: none;
+    }
+  }
+  .mail {
+    display: none !important;
   }
   @media (min-width: 900px) {
     /* LANDSCAPE DESKTOP TYPICAL  */
 
-    .welcome-section-mobile {
-      display: none;
-    }
+
     .mail {
       display: flex !important;
     }
@@ -196,7 +207,7 @@ html .profile-engineer h5 {
         "./assets/images/hello-i-m-nik-MAgPyHRO0AA-medium.jpg" 2x
       );
       color: #000;
-      height: 90vh;
+      height: 100vh;
       font-family: "Raleway", sans-serif;
       font-size: calc(10px + 2vmin);
       font-weight: 300;
@@ -324,7 +335,7 @@ html .profile-engineer h5 {
   color: #576574;
   font-weight: 500;
   font-size: 1rem;
-  /* letter-spacing: 1px; */
+  letter-spacing: .02rem;
 }
 @media (min-aspect-ratio: 560/500) {
   /* LANDSCAPE MODE*/
@@ -333,11 +344,14 @@ html .profile-engineer h5 {
   }
   @media (min-width: 900px) {
     /* LANDSCAPE DESKTOP TYPICAL  */
+    .coming-soon-section .checkout {
+      margin-top: 0.25rem;
+    }
   }
   @media (min-height: 750px) {
     /* LARGE SCREEN DESKTOP*/
     .coming-soon-section .checkout {
-      margin-top: 0.25rem;
+      margin-top: 0.5rem;
     }
   }
 }
@@ -383,6 +397,28 @@ footer {
   /* LANDSCAPE MODE*/
   @media (max-width: 900px) {
     /* LANDSCAPE MODE MOBILE*/
+    footer {
+      display: none !important;
+    }
+    .footer-mobile {
+      display: flex !important;
+      position: fixed;
+      top: 22vh;
+      height: 0;
+      right: 4vw;
+    }
+    .mail-mobile {
+      display: flex !important;
+      position: fixed;
+      top: 4vh;
+      height: 0;
+      right: 4vw;
+    }
+  }
+  @media (max-height: 375px) {
+    .footer-mobile {
+      top: 26vh;
+    }
   }
   @media (min-width: 900px) {
     /* LANDSCAPE DESKTOP TYPICAL  */
@@ -403,9 +439,6 @@ footer {
     display: none !important;
   }
   .footer-mobile {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     display: flex !important;
     position: fixed;
     top: 83.6vh;
@@ -413,9 +446,6 @@ footer {
     right: 25vw;
   }
   .mail-mobile {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     display: flex !important;
     position: fixed;
     top: 82vh;
@@ -444,11 +474,12 @@ html .carousel {
   --cardH: 42vh;
   width: var(--cardW);
   height: var(--cardH);
-  margin-top: 2vh;
+  margin-top: 3.2vh;
   margin-left: 30vw;
   border-radius: 5px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
   overflow: hidden;
+  font-family: "Raleway", sans-serif;
 }
 
 .carousel-indicators {
@@ -472,6 +503,7 @@ html .card {
 html .card-title {
   font-weight: 800;
   display: none;
+  font-family: "Raleway", sans-serif;
 }
 
 html .card-body {
@@ -480,7 +512,8 @@ html .card-body {
   font-weight: 800;
   color: #576574;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  letter-spacing: .02rem;
 }
 
 html .card-text {
@@ -491,6 +524,7 @@ html .btn-primary {
   /* font-weight: 800; */
   font-size: 1rem;
   margin-top: auto;
+  font-family: "Raleway", sans-serif;
 }
 
 .card-img-top {
@@ -505,16 +539,33 @@ html .btn-primary {
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+
+
 }
 
 @media (min-aspect-ratio: 560/500) {
   /* LANDSCAPE MODE*/
   @media (max-width: 900px) {
     /* LANDSCAPE MODE MOBILE*/
+    html .btn-primary {
+      /* font-weight: 800; */
+      display: none;
+    }
+    html .carousel {
+      margin-left: 38vw;
+      --cardW: 42vw;
+      --cardH: 44vh;
+      width: var(--cardW);
+      height: var(--cardH);
+    }
   }
 
   @media (min-width: 900px) {
     /* LANDSCAPE DESKTOP TYPICAL  */
+    .card-image-href {
+      pointer-events: none;
+      cursor: default;
+    }
   }
   @media (min-height: 750px) {
     /* LARGE SCREEN DESKTOP*/
@@ -527,7 +578,14 @@ html .btn-primary {
   }
 }
 @media (max-aspect-ratio: 560/500) {
+  
   /* PORTRAIT MODE */
+
+  .card-image-href {
+    pointer-events: none;
+    cursor: default;
+  }
+
   html .card-text {
     height: 8vh;
   }
