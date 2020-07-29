@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e95b59058686f4ab77c3124ac16fd6e4",
+    "revision": "e8b575209c50ea112fa67397899fd243",
     "url": "/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "91dcf09acf3c4a11aa6c",
-    "url": "/static/css/main.1696c49f.chunk.css"
+    "revision": "08269adc1c7150eec6bc",
+    "url": "/static/css/main.cbb6f7c1.chunk.css"
   },
   {
     "revision": "27674080a63256e0d383",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.387bf025.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "91dcf09acf3c4a11aa6c",
-    "url": "/static/js/main.352ab868.chunk.js"
+    "revision": "08269adc1c7150eec6bc",
+    "url": "/static/js/main.3efdad62.chunk.js"
   },
   {
     "revision": "528ec9d728a6962b2ee7",
@@ -60,43 +60,39 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/abacus.f77162a8.svg"
   },
   {
-    "revision": "48a892e5d76bf282c5bfc825797af9e6",
-    "url": "/static/media/fcc-logo.48a892e5.png"
+    "revision": "d60aa79fb2de762e260d45940e452c50",
+    "url": "/static/media/fcc-logo.d60aa79f.jpg"
   },
   {
-    "revision": "8d7e07c0a57dac59bd2463948f809d1d",
-    "url": "/static/media/gh-logo.8d7e07c0.png"
+    "revision": "3b1c0a3939c669677718512baba25e66",
+    "url": "/static/media/hello-i-m-nik-MAgPyHRO0AA-extralarge-rotated.3b1c0a39.jpg"
   },
   {
-    "revision": "03ffc8d2015d20b347e55d68bea052d1",
-    "url": "/static/media/hello-i-m-nik-MAgPyHRO0AA-extralarge-rotated.03ffc8d2.jpg"
+    "revision": "7b9e5b46a2e00c203325a6d7993a3c21",
+    "url": "/static/media/hello-i-m-nik-MAgPyHRO0AA-extralarge.7b9e5b46.jpg"
   },
   {
-    "revision": "c5cd362fdf18289aefef7675a8ea846b",
-    "url": "/static/media/hello-i-m-nik-MAgPyHRO0AA-extralarge.c5cd362f.jpg"
+    "revision": "04cab499e55ac713a24ef12391a375b3",
+    "url": "/static/media/hello-i-m-nik-MAgPyHRO0AA-large-rotated.04cab499.jpg"
   },
   {
-    "revision": "b4921394c4b63e4b662090e0f84dab76",
-    "url": "/static/media/hello-i-m-nik-MAgPyHRO0AA-large-rotated.b4921394.jpg"
+    "revision": "b7d3d68e1a5b98d01fa9c1bcaa4c8c96",
+    "url": "/static/media/hello-i-m-nik-MAgPyHRO0AA-large.b7d3d68e.jpg"
   },
   {
-    "revision": "f5a0c1ff452c56b87be0add50f66f30a",
-    "url": "/static/media/hello-i-m-nik-MAgPyHRO0AA-large.f5a0c1ff.jpg"
+    "revision": "4db7398e28bbae6634c7fbb1ffbb3c69",
+    "url": "/static/media/hello-i-m-nik-MAgPyHRO0AA-medium.4db7398e.jpg"
   },
   {
-    "revision": "6b39345770f04a1f3f953421c0a1b34a",
-    "url": "/static/media/hello-i-m-nik-MAgPyHRO0AA-medium.6b393457.jpg"
-  },
-  {
-    "revision": "e6fd0f2a2787586e692773c8b3921eaf",
-    "url": "/static/media/hello-i-m-nik-MAgPyHRO0AA-small.e6fd0f2a.jpg"
+    "revision": "c72c1130471cfed087f257df887880b5",
+    "url": "/static/media/hello-i-m-nik-MAgPyHRO0AA-small.c72c1130.jpg"
   },
   {
     "revision": "2577b05e7a3fbe1daf1c78fceb355873",
     "url": "/static/media/machine-learning.2577b05e.svg"
   },
   {
-    "revision": "7a0e4472ec077e11eb359504d368dc10",
-    "url": "/static/media/profile.7a0e4472.jpg"
+    "revision": "00e41e3aef6607d4eef86d37875dd12d",
+    "url": "/static/media/profile.00e41e3a.jpg"
   }
 ]);
