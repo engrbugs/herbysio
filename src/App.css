@@ -124,6 +124,15 @@ html .profile-engineer h5 {
       display: flex !important;
     }
   }
+  @media (min-width: 1500px) {
+    /* LANDSCAPE DESKTOP TYPICAL  */
+    html .profile-ml {
+    margin-right: 6.8rem !important;
+    }
+    html h5 {
+      line-height: 2.0;
+    }
+  }
 }
 @media (max-aspect-ratio: 560/500) {
   /* PORTRAIT MODE */

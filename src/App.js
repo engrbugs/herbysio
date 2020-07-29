@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import profilePicture from "./assets/images/profile.jpg";
-import ghLogo from "./assets/images/gh-logo.png";
-import fccLogo from "./assets/images/fcc-logo.png";
+import ghLogo from "./assets/images/gh-logo.jpg";
+import fccLogo from "./assets/images/fcc-logo.jpg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Carousel, Card, Button } from "react-bootstrap";
@@ -53,7 +53,7 @@ function App() {
                 an <strong>Engineer.</strong>
               </h5>
             </div>
-            <div className="row float-right">
+            <div className="profile-ml row float-right">
               <h5>Machine Learning, AI, and Mathematics enthusiast.</h5>
             </div>
             <div className="arrow">
