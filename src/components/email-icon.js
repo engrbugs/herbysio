@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
-import { TweenLite, TimelineLite, Back } from "gsap";
 import { WEBSITE_EMAIL } from "../App.js";
 import "./email-icon.css";
+import { TimelineLite, TweenLite, Back, gsap }  from "gsap";
+
+gsap.registerPlugin(TimelineLite, TweenLite, Back);
 
 function EmailMe() {
   useEffect(() => {
