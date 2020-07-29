@@ -26,6 +26,7 @@
 
 html {
   scroll-behavior: smooth;
+  /* -webkit-overflow-scrolling: touch;  */
 }
 
 body {
@@ -43,6 +44,18 @@ html h5 {
   line-height: 1.5;
   font-size: 2rem;
   font-weight: 300;
+}
+html .pf-hello-only {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-left: -28.8rem;
+  margin-top: -4.8rem;
+}
+
+html .pf-wo-hello {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-left: -11.8rem;
 }
 
 html h5 strong {
@@ -72,8 +85,29 @@ html .profile-engineer h5 {
   .welcome-section-mobile {
     display: none;
   }
+
+
   @media (max-width: 900px) {
     /* LANDSCAPE MODE MOBILE*/
+    html .pf-hello-only {
+      display: none !important;
+    }
+    html .pf-wo-hello {
+      display: none !important;
+    }
+
+    @media (max-width: 823px) {
+      html .pf-hello-only {
+        display: block !important;
+      }
+      html .pf-wo-hello {
+        display: block !important;
+      }
+      html .profile-name h5 {
+        display: none !important;
+      }
+    }
+
     .welcome-section {
       height: 168vh;
     }
@@ -86,12 +120,17 @@ html .profile-engineer h5 {
   }
   @media (min-width: 900px) {
     /* LANDSCAPE DESKTOP TYPICAL  */
-
-
+    html .pf-hello-only {
+      display: none !important;
+    }
+    html .pf-wo-hello {
+      display: none !important;
+    }
     .mail {
       display: flex !important;
     }
   }
+
 }
 @media (max-aspect-ratio: 560/500) {
   /* PORTRAIT MODE */
@@ -135,6 +174,31 @@ html .profile-engineer h5 {
   }
   @media (min-height: 900px) {
     /* HIGHRES PORTRAIT IPAD */
+    html .pf-hello-only {
+      display: none !important;
+    }
+    html .pf-wo-hello {
+      display: none !important;
+    }
+    @media (max-width: 800px) {
+      html .pf-hello-only {
+        display: block !important;
+      }
+      html .pf-wo-hello {
+        display: block !important;
+      }
+      html .profile-name h5 {
+        display: none !important;
+      }
+    }
+
+
+
+
+
+
+
+
   }
   @media (max-height: 900px) {
     /* MOBILE PORTRAIT TYPICAL */
@@ -403,21 +467,16 @@ footer {
     .footer-mobile {
       display: flex !important;
       position: fixed;
-      top: 22vh;
+      top: 96px;
       height: 0;
       right: 4vw;
     }
     .mail-mobile {
       display: flex !important;
       position: fixed;
-      top: 4vh;
+      top: 18px;
       height: 0;
       right: 4vw;
-    }
-  }
-  @media (max-height: 375px) {
-    .footer-mobile {
-      top: 26vh;
     }
   }
   @media (min-width: 900px) {
@@ -438,25 +497,40 @@ footer {
   footer {
     display: none !important;
   }
-  .footer-mobile {
-    display: flex !important;
-    position: fixed;
-    top: 83.6vh;
-    height: 0;
-    right: 25vw;
-  }
-  .mail-mobile {
-    display: flex !important;
-    position: fixed;
-    top: 82vh;
-    height: 0;
-    right: 6vw;
-  }
+  
   @media (min-height: 900px) {
     /* HIGHRES PORTRAIT IPAD */
+    .footer-mobile {
+      display: flex !important;
+      position: fixed;
+      top: 91vh;
+      height: 0;
+      right: 96px;
+    }
+    .mail-mobile {
+      display: flex !important;
+      position: fixed;
+      top: 88vh;
+      height: 0;
+      right: 18px;
+    }
   }
   @media (max-height: 900px) {
     /* MOBILE PORTRAIT TYPICAL */
+    .footer-mobile {
+      display: flex !important;
+      position: fixed;
+      top: 83.6vh;
+      height: 0;
+      right: 96px;
+    }
+    .mail-mobile {
+      display: flex !important;
+      position: fixed;
+      top: 82vh;
+      height: 0;
+      right: 18px;
+    }
   }
   @media (max-height: 736px) {
   }
@@ -586,6 +660,25 @@ html .btn-primary {
     cursor: default;
   }
 
+  @media (min-height: 900px) {
+    /* HIGHRES PORTRAIT IPAD */
+  html .card-text {
+    height: 7vh;
+  }
+  html .carousel {
+    margin-top: 4vh;
+    margin-left: 0;
+    --cardW: 60vw;
+    --cardH: 30vh;
+
+    width: var(--cardW);
+    height: var(--cardH);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  }
+  }
+  @media (max-height: 900px) {
+    /* MOBILE PORTRAIT TYPICAL */
+    
   html .card-text {
     height: 8vh;
   }
@@ -599,11 +692,6 @@ html .btn-primary {
     height: var(--cardH);
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
   }
-  @media (min-height: 900px) {
-    /* HIGHRES PORTRAIT IPAD */
-  }
-  @media (max-height: 900px) {
-    /* MOBILE PORTRAIT TYPICAL */
   }
   @media (max-height: 736px) {
   }

@@ -12,6 +12,9 @@ import DiagonalSection from "./components/diagonal-section.js";
 import "./components/tool-tip.css";
 import robot from "./assets/images/machine-learning.svg";
 import abacus from "./assets/images/abacus.svg";
+// import { TweenLite, TimelineLite, Back } from "gsap";
+import { CSSPlugin } from 'gsap/CSSPlugin'
+import { gsap }  from "gsap";
 
 export const WEBSITE_EMAIL = "engrherbysio@gmail.com";
 
@@ -20,7 +23,7 @@ function App() {
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
-
+  gsap.registerPlugin(CSSPlugin);
   return (
     <div className="App grid p-0 m-0">
       <header className="container-fluid welcome-section p-0 m-0">
@@ -31,14 +34,22 @@ function App() {
         </div>
         <DiagonalSection />
         <div className="row text-align-center justify-content-center m-0">
-          <div>Hello,</div>
+        
+          
           <div className="image-cropper">
             <img className="profile-pic" src={profilePicture} alt="" />
           </div>
           <div className="container-fluid m-5">
+
             <div className="profile-name row text-align-center justify-content-center">
+            <div className="pf-hello-only d-block">Hello,</div>
               <h5>
                 <strong>Hello</strong>, my name is <strong>Herby Sio.</strong>
+              </h5>
+            </div>
+            <div className="pf-wo-hello row text-align-center justify-content-center">
+              <h5>
+                my name is <strong>Herby Sio.</strong>
               </h5>
             </div>
             <div className="profile-engineer row text-align-center justify-content-center">
