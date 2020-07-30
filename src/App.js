@@ -13,12 +13,11 @@ import "./components/tool-tip.css";
 import robot from "./assets/images/machine-learning.svg";
 import abacus from "./assets/images/abacus.svg";
 
-
 export const WEBSITE_EMAIL = "engrherbysio@gmail.com";
 
 function App() {
   const [index, setIndex] = useState(0);
-  
+
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
@@ -38,23 +37,29 @@ function App() {
           </div>
           <div className="container-fluid m-5">
             <div className="profile-name row text-align-center justify-content-center">
-              <div className="pf-hello-only d-block">Hello,</div>
+              <div className="pf-hello-only d-block">
+                <strong>Hello</strong>,
+              </div>
               <h5>
-                <strong>Hello</strong>, my name is <strong>Herby Sio.</strong>
+                <strong>Hello</strong>, my name is{" "}
+                <strong itemProp="name">Herby Sio</strong>.
               </h5>
             </div>
             <div className="pf-wo-hello row text-align-center justify-content-center">
               <h5>
-                my name is <strong>Herby Sio.</strong>
+                my name is <strong>Herby Sio</strong>.
               </h5>
             </div>
             <div className="profile-engineer row text-align-center justify-content-center">
               <h5>
-                an <strong>Engineer.</strong>
+                an <strong itemProp="profession">Engineer</strong>.
               </h5>
             </div>
-            <div className="profile-ml row float-right">
-              <h5>Machine Learning, AI, and Mathematics enthusiast.</h5>
+            <div className="profile-ml row">
+              <h5>
+                <span itemProp="skills">Machine Learning</span>, AI, and
+                Mathematics enthusiast.
+              </h5>
             </div>
             <div className="arrow">
               <ScrollDownArrow />

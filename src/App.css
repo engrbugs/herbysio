@@ -70,6 +70,10 @@ html .profile-engineer h5 {
   margin-left: -2.8rem;
 }
 
+html .profile-ml {
+  float: right;
+}
+
 .welcome-section {
   background-color: #2e86de;
   font-size: calc(10px + 2vmin);
@@ -127,10 +131,13 @@ html .profile-engineer h5 {
   @media (min-width: 1500px) {
     /* LANDSCAPE DESKTOP TYPICAL  */
     html .profile-ml {
-    margin-right: 6.8rem !important;
+      justify-content: center !important;
+      text-align: center !important;
+      margin-left: 36.8rem !important;
+      float: none !important;
     }
     html h5 {
-      line-height: 2.0;
+      line-height: 2;
     }
   }
 }
@@ -260,7 +267,6 @@ html .profile-engineer h5 {
       color: #000;
       height: 100vh;
       font-family: "Raleway", sans-serif;
-      font-size: calc(10px + 2vmin);
       font-weight: 300;
       background-size: 118%;
       background-repeat: no-repeat;
@@ -286,7 +292,6 @@ html .profile-engineer h5 {
       color: #000;
       height: 90vh;
       font-family: "Raleway", sans-serif;
-      font-size: calc(10px + 2vmin);
       font-weight: 300;
     }
   }
@@ -310,7 +315,6 @@ html .profile-engineer h5 {
       color: #000;
       height: calc(100vh - var(--welcome-mobile-ht));
       font-family: "Raleway", sans-serif;
-      font-size: calc(10px + 2vmin);
       font-weight: 300;
       background-size: cover;
       background-repeat: no-repeat;
@@ -321,38 +325,32 @@ html .profile-engineer h5 {
     /* MOBILE PORTRAIT TYPICAL */
     .coming-soon-section {
       background-color: black;
-      background-image: url(./assets/images/hello-i-m-nik-MAgPyHRO0AA-large-rotated.jpg);
+      background-image: url(./assets/images/hello-i-m-nik-MAgPyHRO0AA-phone1x.jpg);
       background-image: -webkit-image-set(
-        "./assets/images/hello-i-m-nik-MAgPyHRO0AA-large-rotated.jpg" 1x,
-        "./assets/images/hello-i-m-nik-MAgPyHRO0AA-extralarge-rotated.jpg" 2x
+        "./assets/images/hello-i-m-nik-MAgPyHRO0AA-phone1x.jpg" 1x,
+        "./assets/images/hello-i-m-nik-MAgPyHRO0AA-phone2x.jpg" 2x
       );
       background-image: image-set(
-        "./assets/images/hello-i-m-nik-MAgPyHRO0AA-large-rotated.jpg" 1x,
-        "./assets/images/hello-i-m-nik-MAgPyHRO0AA-extralarge-rotated.jpg" 2x
+        "./assets/images/hello-i-m-nik-MAgPyHRO0AA-phone1x.jpg" 1x,
+        "./assets/images/hello-i-m-nik-MAgPyHRO0AA-phone2x.jpg" 2x
       );
       color: #000;
       /* height: 93.2vh; MAX VH for mobile */
       height: calc(93.2vh - var(--welcome-mobile-ht));
       font-family: "Raleway", sans-serif;
-      font-size: calc(10px + 2vmin);
       font-weight: 300;
-      background-size: 180%;
+      background-size: 118%;
       background-repeat: no-repeat;
       background-position: center bottom;
     }
     @media (max-height: 736px) {
       .coming-soon-section {
-        background-position: center bottom 28%;
-      }
-    }
-    @media (max-height: 640px) {
-      .coming-soon-section {
-        background-position: center bottom 33%;
+        background-position: center bottom 48%;
       }
     }
     @media (max-height: 568px) {
       .coming-soon-section {
-        background-position: center bottom 43%;
+        background-position: center bottom 62%;
       }
     }
   }
@@ -490,6 +488,23 @@ footer {
       right: 18px;
     }
   }
+  @media (min-height: 1600px) {
+    /* SUPER HIGHRES PORTRAIT */
+    .footer-mobile {
+      display: flex !important;
+      position: fixed;
+      top: 95.5vh;
+      height: 0;
+      right: 111px;
+    }
+    .mail-mobile {
+      display: flex !important;
+      position: fixed;
+      top: 95vh;
+      height: 0;
+      right: 28px;
+    }
+  }
   @media (max-height: 900px) {
     /* MOBILE PORTRAIT TYPICAL */
     .footer-mobile {
@@ -513,7 +528,7 @@ footer {
 /* BootStrap Override CSS START*/
 html .carousel {
   --cardW: 30vw;
-  --cardH: 42vh;
+  --cardH: calc(var(--cardW) * 2 / 3);
   width: var(--cardW);
   height: var(--cardH);
   margin-top: 3.2vh;
@@ -559,7 +574,7 @@ html .card-body {
 }
 
 html .card-text {
-  height: 8vh;
+  height: 44px;
 }
 
 html .btn-primary {
@@ -603,11 +618,11 @@ html .btn-primary {
   }
   @media (min-height: 750px) {
     /* LARGE SCREEN DESKTOP*/
+    html .card-text {
+      height: 64px;
+    }
     html .carousel {
       margin-top: 7.2vh;
-    }
-    html .card-text {
-      height: 11vh;
     }
   }
 }
@@ -626,7 +641,7 @@ html .btn-primary {
       margin-top: 4vh;
       margin-left: 0;
       --cardW: 60vw;
-      --cardH: 30vh;
+      --cardH: calc(var(--cardW) * 2 / 3);
       width: var(--cardW);
       height: var(--cardH);
       box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);

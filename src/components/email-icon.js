@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { WEBSITE_EMAIL } from "../App.js";
 import "./email-icon.css";
-import { TimelineLite, TweenLite, Back, gsap }  from "gsap";
+import { TimelineLite, TweenLite, Back, gsap } from "gsap";
 
 gsap.registerPlugin(TimelineLite, TweenLite, Back);
 
@@ -69,6 +69,7 @@ function EmailMe() {
 
   return (
     <a
+      itemProp="email"
       href={`mailto:${WEBSITE_EMAIL}`}
       target="_blank"
       rel="noopener noreferrer"
