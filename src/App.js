@@ -13,7 +13,7 @@ import "./components/tool-tip.css";
 import robot from "./assets/images/machine-learning.svg";
 import abacus from "./assets/images/abacus.svg";
 
-export const WEBSITE_EMAIL = "engrherbysio@gmail.com";
+export const WEBSITE_EMAIL = "engrbugs@gmail.com";
 
 function App() {
   const [index, setIndex] = useState(0);
