@@ -1,30 +1,33 @@
 {
   "files": {
-    "main.css": "/static/css/main.0e0d9dc2.chunk.css",
-    "main.js": "/static/js/main.b436fc40.chunk.js",
-    "main.js.map": "/static/js/main.b436fc40.chunk.js.map",
+    "main.css": "/static/css/main.c1775d31.chunk.css",
+    "main.js": "/static/js/main.4d7056c3.chunk.js",
+    "main.js.map": "/static/js/main.4d7056c3.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e12977cf.js",
     "runtime-main.js.map": "/static/js/runtime-main.e12977cf.js.map",
     "static/css/2.af3c1da9.chunk.css": "/static/css/2.af3c1da9.chunk.css",
-    "static/js/2.387bf025.chunk.js": "/static/js/2.387bf025.chunk.js",
-    "static/js/2.387bf025.chunk.js.map": "/static/js/2.387bf025.chunk.js.map",
+    "static/js/2.98d6a81d.chunk.js": "/static/js/2.98d6a81d.chunk.js",
+    "static/js/2.98d6a81d.chunk.js.map": "/static/js/2.98d6a81d.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.a45ec62cad31afdf80a16cef2d6b7984.js": "/precache-manifest.a45ec62cad31afdf80a16cef2d6b7984.js",
+    "precache-manifest.11be8083d2a59e218db84ad5fe4c46c3.js": "/precache-manifest.11be8083d2a59e218db84ad5fe4c46c3.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.0e0d9dc2.chunk.css.map": "/static/css/main.0e0d9dc2.chunk.css.map",
-    "static/js/2.387bf025.chunk.js.LICENSE.txt": "/static/js/2.387bf025.chunk.js.LICENSE.txt",
+    "static/css/main.c1775d31.chunk.css.map": "/static/css/main.c1775d31.chunk.css.map",
+    "static/js/2.98d6a81d.chunk.js.LICENSE.txt": "/static/js/2.98d6a81d.chunk.js.LICENSE.txt",
     "static/media/App.css": "/static/media/hello-i-m-nik-MAgPyHRO0AA-small.c72c1130.jpg",
     "static/media/abacus.svg": "/static/media/abacus.f77162a8.svg",
+    "static/media/coursera-logo.png": "/static/media/coursera-logo.f7346946.png",
     "static/media/fcc-logo.jpg": "/static/media/fcc-logo.d60aa79f.jpg",
+    "static/media/kaggle-logo.jpg": "/static/media/kaggle-logo.d8bd4182.jpg",
     "static/media/machine-learning.svg": "/static/media/machine-learning.2577b05e.svg",
+    "static/media/prc-logo.jpg": "/static/media/prc-logo.73146c6e.jpg",
     "static/media/profile.jpg": "/static/media/profile.00e41e3a.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.e12977cf.js",
     "static/css/2.af3c1da9.chunk.css",
-    "static/js/2.387bf025.chunk.js",
-    "static/css/main.0e0d9dc2.chunk.css",
-    "static/js/main.b436fc40.chunk.js"
+    "static/js/2.98d6a81d.chunk.js",
+    "static/css/main.c1775d31.chunk.css",
+    "static/js/main.4d7056c3.chunk.js"
   ]
 }
