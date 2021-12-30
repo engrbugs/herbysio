@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import profilePicture from "./assets/images/profile.jpg";
 import ghLogo from "./assets/images/gh-logo.jpg";
 import fccLogo from "./assets/images/fcc-logo.jpg";
+import courseraLogo from "./assets/images/coursera-logo.png";
+import kaggleLogo from "./assets/images/kaggle-logo.jpg";
+import prcLogo from "./assets/images/prc-logo.jpg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Carousel, Card, Button } from "react-bootstrap";
@@ -92,14 +95,14 @@ function App() {
           <div className="row text-align-center justify-content-center">
             <p className="h-auto d-inline-block pound">#</p>
             <p className="h-auto d-inline-block underconstruction">
-              underconstruction
+              checkout_other
             </p>
           </div>
           <div className="row text-align-center justify-content-center">
-            <h1>Coming Soon</h1>
+            <h1>Online Portfolios:</h1>
           </div>
-          <div className="row text-align-center justify-content-center checkout">
-            <p>Check out online portfolios:</p>
+          <div className="row text-align-center justify-content-center checkout invisible">
+            <p>Online</p>
           </div>
           <div className="row text-align-center justify-content-center">
             <Carousel activeIndex={index} onSelect={handleSelect}>
@@ -152,6 +155,81 @@ function App() {
                       variant="primary"
                     >
                       Open GitHub
+                    </Button>
+                  </Card.Body>
+                </Card>
+              </Carousel.Item>
+              <Carousel.Item>
+                <Card>
+                  <a
+                    className="card-image-href"
+                    href="https://www.coursera.org/account/accomplishments/verify/5XVLTM37VVLT"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    id="linkedin"
+                  >
+                    <Card.Img variant="top" src={courseraLogo} alt="Coursera logo" />
+                  </a>
+                  <Card.Body>
+                    <Card.Title>Coursera</Card.Title>
+                    <Card.Text>Open online course provider.</Card.Text>
+                    <Button
+                      href="https://www.coursera.org/account/accomplishments/verify/5XVLTM37VVLT"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      variant="primary"
+                    >
+                      Open Coursera
+                    </Button>
+                  </Card.Body>
+                </Card>
+              </Carousel.Item>
+              <Carousel.Item>
+                <Card>
+                  <a
+                    className="card-image-href"
+                    href="https://www.kaggle.com/learn/certification/engrbugs/advanced-sql"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    id="linkedin"
+                  >
+                    <Card.Img variant="top" src={kaggleLogo} alt="Kaggle logo" />
+                  </a>
+                  <Card.Body>
+                    <Card.Title>Kaggle</Card.Title>
+                    <Card.Text>Online community of data scientists and machine learning practitioners.</Card.Text>
+                    <Button
+                      href="https://www.kaggle.com/learn/certification/engrbugs/advanced-sql"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      variant="primary"
+                    >
+                      Open Kaggle
+                    </Button>
+                  </Card.Body>
+                </Card>
+              </Carousel.Item>
+              <Carousel.Item>
+                <Card>
+                  <a
+                    className="card-image-href"
+                    href="https://prc.herbysio.ca/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    id="linkedin"
+                  >
+                    <Card.Img variant="top" src={prcLogo} alt="PRC logo" />
+                  </a>
+                  <Card.Body>
+                    <Card.Title>PRC</Card.Title>
+                    <Card.Text>Republic of the Philippines Professional Regulation Commission.</Card.Text>
+                    <Button
+                      href="https://prc.herbysio.ca/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      variant="primary"
+                    >
+                      View PRC
                     </Button>
                   </Card.Body>
                 </Card>
